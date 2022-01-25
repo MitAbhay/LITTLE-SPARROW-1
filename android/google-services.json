@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "151949140363",
+    "project_id": "little-sparrow-dcf68",
+    "storage_bucket": "little-sparrow-dcf68.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:151949140363:android:cc47f5d9d3590c28d5cf8e",
+        "android_client_info": {
+          "package_name": "com.example.little_sparrow"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "151949140363-3aoectctapk9bm62s52hfnrc80gtpao4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.little_sparrow",
+            "certificate_hash": "966b684df9e22f83694954a7c677e03d9f18a393"
+          }
+        },
+        {
+          "client_id": "151949140363-5kdiofvcurn738kgjvlhg2qbot7q1fp9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvUZKExrGaSXlfPB4Xr31qljYtHxmYuDQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "151949140363-5kdiofvcurn738kgjvlhg2qbot7q1fp9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
