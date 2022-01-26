@@ -32,8 +32,8 @@
 22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 22-->[androidx.core:core:1.6.0] C:\Users\mysel\.gradle\caches\transforms-2\files-2.1\ff453976176a403e13d8ed149ba417dd\core-1.6.0\AndroidManifest.xml:24:18-86
 23        android:debuggable="true"
-24        android:icon="@mipmap/ic_launcher"
-25        android:label="little_sparrow" >
+24        android:icon="@mipmap/launcher_icon"
+25        android:label="Little Sparrow" >
 26        <activity
 27            android:name="com.example.little_sparrow.MainActivity"
 28            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"

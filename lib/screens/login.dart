@@ -273,7 +273,6 @@ class _MobileAuthState extends State<MobileAuth> {
                 : currentState == MobileVerificationState.SHOW_MOBILE_FORM_STATE
                     ? getMobileFormWidget(context)
                     : getOtpFormWidget(context),
-            padding: const EdgeInsets.all(16),
           )),
     );
   }
