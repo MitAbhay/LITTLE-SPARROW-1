@@ -8,7 +8,7 @@ class UserDetail {
   String? userState;
   String? userPinCode;
   String? userJob;
-  bool? userDeliveryInProgress;
+  String? userDeliveryInProgress;
   bool? userSingleMother;
   int? userChildNo;
   int? userInitialScore;
