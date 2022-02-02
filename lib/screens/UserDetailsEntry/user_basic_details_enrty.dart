@@ -1,5 +1,5 @@
 import 'dart:async';
-
+import 'package:intl/intl.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -13,15 +13,18 @@ class BasicDataEntry extends StatefulWidget {
 class _BasicDataEntryState extends State<BasicDataEntry> {
   final _userNameController = TextEditingController();
   final _userChildNoController = TextEditingController();
+  final _userDOBController = TextEditingController();
 
   DateTime currentDate = DateTime.now();
   DateTime? _userBirthDate ;
+  DateTime? _userDeliveryDate;
 
   double animatedContainerHeight = 60;
 
-  bool _userCurrentlyPregnant = false;
+  bool _userCurrentlyPregnant = true;
+  bool _animatedContainerSelected = false;
 
-  Future<void> _selectDate(BuildContext context) async {
+  Future<void> _selectBirthDate(BuildContext context) async {
     final DateTime? picked = await showDatePicker(
         context: context,
         initialDate: DateTime.now(),
@@ -31,6 +34,21 @@ class _BasicDataEntryState extends State<BasicDataEntry> {
     if (picked != null && picked != _userBirthDate) {
       setState(() {
         _userBirthDate = picked;
+        _userDOBController.text = DateFormat('yyyy-MM-dd – kk:mm').format(picked);
+      });
+    }
+  }
+
+  Future<void> _selectDeliveryDate(BuildContext context) async {
+    final DateTime? picked = await showDatePicker(
+        context: context,
+        initialDate: DateTime.now(),
+        firstDate: DateTime(2000),
+        lastDate: DateTime(2022)
+    );
+    if (picked != null && picked != _userDeliveryDate) {
+      setState(() {
+        _userDeliveryDate = picked;
       });
     }
   }
@@ -78,7 +96,11 @@ class _BasicDataEntryState extends State<BasicDataEntry> {
                                 fontSize: 20,
                                 // fontWeight: FontWeight.bold
                             ),
-
+                            onTap: (){
+                              setState(() {
+                                _animatedContainerSelected = false;
+                              });
+                            },
                             decoration: InputDecoration(
                                 labelText: "Name",
                                 labelStyle: const TextStyle(
@@ -109,7 +131,8 @@ class _BasicDataEntryState extends State<BasicDataEntry> {
                           width: MediaQuery.of(context).size.width * 0.8,
                           child: TextFormField(
                               onTap: (){
-                                _selectDate(context);
+                                _selectBirthDate(context);
+                                _animatedContainerSelected = false;
                                 print('ye chutiyap h sb');
                               },
                               textAlign: TextAlign.center,
@@ -118,7 +141,7 @@ class _BasicDataEntryState extends State<BasicDataEntry> {
                                   fontSize: 20
                               ),
                               readOnly: true,
-
+                              controller: _userDOBController,
                               decoration: InputDecoration(
                                   suffixIcon: const Padding(
                                     child: FaIcon(
@@ -154,13 +177,15 @@ class _BasicDataEntryState extends State<BasicDataEntry> {
 
                         //Child Delivered
                         AnimatedContainer(
-                          duration: const Duration(milliseconds: 150),
+                          duration: const Duration(milliseconds: 0),
                           height: animatedContainerHeight,
                           margin: const EdgeInsets.all(10),
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(20),
                             border: Border.all(
-                              color: Colors.white,
+                              color: _animatedContainerSelected ?
+                                        Colors.white:
+                                        Colors.grey,
                               width: 5
                             )
                           ),
@@ -168,30 +193,82 @@ class _BasicDataEntryState extends State<BasicDataEntry> {
                           child: Column(
                             children: <Widget>[
                               Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: <Widget>[
-                                  const Text(
-                                    "Currently Pregnant?",
-                                    style: TextStyle(
-                                      fontFamily: "Bebas Neue"
+                                  const Padding(
+                                    padding: EdgeInsets.symmetric(
+                                      horizontal: 10,
+                                    ),
+                                    child: Text(
+                                      "Currently Pregnant?",
+                                      style: TextStyle(
+                                          color: Color(0xff665e37),
+                                          fontFamily: "Bebas Neue",
+                                          fontSize: 20
+                                      ),
                                     ),
                                   ),
                                   Switch(
                                       value: _userCurrentlyPregnant,
                                       onChanged: (value){
                                         setState(() {
+                                          _animatedContainerSelected = true;
                                           animatedContainerHeight == 60 ?
-                                              animatedContainerHeight = 120:
+                                              animatedContainerHeight = 90:
                                               animatedContainerHeight = 60;
                                           _userCurrentlyPregnant = value;
                                         });
                                       }
                                   )
                                 ]
-                              )
+                              ),
+                              if (!_userCurrentlyPregnant)
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: <Widget>[
+                                    const Padding(
+                                      padding: EdgeInsets.symmetric(
+                                        horizontal: 10,
+                                      ),
+                                      child: Text(
+                                        "Delivered on:",
+                                        style: TextStyle(
+                                            color: Color(0xff665e37),
+                                            fontFamily: "Bebas Neue",
+                                            fontSize: 20
+                                        ),
+                                      ),
+                                    ),
+                                    Container(
+                                      child: Text(
+                                        _userDeliveryDate == null ?
+                                        "                          ":
+                                        _userDeliveryDate.toString(),
+                                        style: const TextStyle(
+                                          fontFamily: "Poppins",
+                                          fontSize: 20,
+                                          decoration: TextDecoration.underline
+                                        ),
+                                      ),
+                                    ),
+                                    Padding(
+                                      child: InkWell(
+                                        onTap: (){
+                                          _selectDeliveryDate(context);
+                                          print("fuck off");
+                                        },
+                                        child: const FaIcon(
+                                          FontAwesomeIcons.calendar,
+                                          size: 25,
+                                        ),
+                                      ),
+                                      padding: const EdgeInsets.fromLTRB(0,0,10,5),
+                                    ),
+                                  ],
+                                )
                             ],
+
                           ),
-
-
                         ),
 
                         //Child Number
@@ -207,7 +284,11 @@ class _BasicDataEntryState extends State<BasicDataEntry> {
                             ),
                             keyboardType: TextInputType.number,
                             textAlign: TextAlign.center,
-
+                            onTap: (){
+                              setState(() {
+                                _animatedContainerSelected = false;
+                              });
+                            },
                             decoration: InputDecoration(
                                 labelText: "Child Number",
                                 labelStyle: const TextStyle(
