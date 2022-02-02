@@ -174,7 +174,6 @@ class _BasicDataEntryState extends State<BasicDataEntry> {
                             ),
                           ),
 
-
                         //Child Delivered
                         AnimatedContainer(
                           duration: const Duration(milliseconds: 0),
@@ -311,7 +310,10 @@ class _BasicDataEntryState extends State<BasicDataEntry> {
                             ),
                           ),
                         ),
+
                         const SizedBox(height: 10,),
+
+                        // Proceed Button
                         ElevatedButton(
                             onPressed: (){},
                             child: const Text(

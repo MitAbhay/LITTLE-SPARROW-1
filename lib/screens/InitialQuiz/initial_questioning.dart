@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import 'package:little_sparrow/screens/InitialQuiz/quiz.dart';
+import 'package:little_sparrow/screens/InitialQuiz/result.dart';
+
 class InitialQuestions extends StatefulWidget {
   const InitialQuestions({Key? key}) : super(key: key);
 
@@ -102,8 +105,46 @@ class _InitialQuestionsState extends State<InitialQuestions> {
     },
   ];
 
+  var _questionIndex = 0;
+  var _totalScore = 0;
+
+  void _resetQuiz() {
+    setState(() {
+      _questionIndex = 0;
+      _totalScore = 0;
+    });
+  }
+
+  void _answerQuestion(int score) {
+    _totalScore += score;
+
+    setState(() {
+      _questionIndex = _questionIndex + 1;
+    });
+    print(_questionIndex);
+    if (_questionIndex < _initialQuestions.length) {
+      print('We have more questions!');
+    } else {
+      print('No more questions!');
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return MaterialApp(
+      home: Scaffold(
+        body: Padding(
+          padding: const EdgeInsets.all(30.0),
+          child: _questionIndex < _initialQuestions.length
+              ? Quiz(
+            answerQuestion: _answerQuestion,
+            questionIndex: _questionIndex,
+            questions: _initialQuestions,
+          ) //Quiz
+              : Result(_totalScore, _resetQuiz),
+        ), //Padding
+      ), //Scaffold
+      debugShowCheckedModeBanner: false,
+    );
   }
 }
