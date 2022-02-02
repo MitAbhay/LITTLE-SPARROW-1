@@ -17,13 +17,13 @@ class Quiz extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: [
+      children: <Widget>[
         Question(
-          questions[questionIndex]['questionText']?.toString() ?? '',
+          questions[questionIndex]['questionText'] as String,
         ), //Question
         ...(questions[questionIndex]['answers'] as List<Map<String, Object>>)
             .map((answer) {
-          return Answer(() => answerQuestion(answer['score']), answer['text']?.toString() ?? '');
+          return Answer(() => answerQuestion(answer['score']), answer['text'] as String);
         }).toList()
       ],
     ); //Column

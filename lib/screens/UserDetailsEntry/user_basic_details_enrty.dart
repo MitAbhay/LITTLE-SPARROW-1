@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:intl/intl.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:little_sparrow/screens/InitialQuiz/initial_questioning.dart';
 
 class BasicDataEntry extends StatefulWidget {
   const BasicDataEntry({Key? key}) : super(key: key);
@@ -315,7 +316,14 @@ class _BasicDataEntryState extends State<BasicDataEntry> {
 
                         // Proceed Button
                         ElevatedButton(
-                            onPressed: (){},
+                            onPressed: (){
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const InitialQuestions()
+                                )
+                              );
+                            },
                             child: const Text(
                               "Proceed",
                               style: TextStyle(
