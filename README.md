@@ -1,10 +1,10 @@
 <div id="top"></div>
-[![Contributors][contributors-shield]][contributors-url]
+<!-- [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+[![LinkedIn][linkedin-shield]][linkedin-url] -->
 
 <!-- PROJECT LOGO -->
 <br />
@@ -58,8 +58,10 @@
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+<div align="center">
+<img src="assets/Screenshots/Screenshot_20220201_231519.png" alt="Logo" width="350" height="500">
+</div>
+<!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
 Postpartum depression (PPD), also called postnatal depression, is a type of mood disorder associated with childbirth, which can affect both sexes. Symptoms may include extreme sadness, low energy, anxiety, crying episodes, irritability, and changes in sleeping or eating patterns. Onset is typically between one week and one month following childbirth. PPD can also negatively affect the newborn child.
 
@@ -154,10 +156,10 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 ## Our Team
 
-Aastha Berry - [LinkedIn](https://www.linkedin.com/in/aastha-berry-582160203/)
-Abhay Kumar Mittal - [LinkedIn](https://www.linkedin.com/in/mitabhay/)
-Anurag Tripathi - [LinkedIn](https://www.linkedin.com/in/anurag-tripathi-7422291b4/)
-Stuti Srivastava - [LinkedIn](https://www.linkedin.com/in/stuti-srivastava-149192203/)
+- Aastha Berry - [LinkedIn](https://www.linkedin.com/in/aastha-berry-582160203/)
+- Abhay Kumar Mittal - [LinkedIn](https://www.linkedin.com/in/mitabhay/)
+- Anurag Tripathi - [LinkedIn](https://www.linkedin.com/in/anurag-tripathi-7422291b4/)
+- Stuti Srivastava - [LinkedIn](https://www.linkedin.com/in/stuti-srivastava-149192203/)
 
 <!-- Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name) -->
 
