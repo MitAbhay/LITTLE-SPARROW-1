@@ -82,7 +82,10 @@ flutter:
     - assets/images/community.png
     - assets/images/diary.png
     - assets/images/womanProfile.png
-
+    - assets/images/info.png
+    - assets/images/Depression.png
+    - assets/images/postpartumDepression.png
+    - assets/images/robot.png
     - assets/gif/girl_1.gif
     - assets/gif/girl_3.gif
     - assets/gif/girl_15.gif
