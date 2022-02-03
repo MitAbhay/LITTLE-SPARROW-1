@@ -37,9 +37,11 @@ class HomePage extends StatelessWidget {
                   child: Column(
                     children: <Widget>[
 
+                      // Notification and Setting Icon
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: <Widget>[
+                          //Notification
                           InkWell(
                             child: Image.asset(
                               "assets/images/bell.png",
@@ -47,6 +49,7 @@ class HomePage extends StatelessWidget {
                               color: Colors.white,
                             ),
                           ),
+                          //Setting
                           InkWell(
                             child: Image.asset(
                               "assets/images/gear.png",
@@ -70,6 +73,7 @@ class HomePage extends StatelessWidget {
                           // Postpartum Depression
                           InkWell(
                             onTap: (){},
+                            borderRadius: BorderRadius.circular(20),
                             child: Container(
                               decoration: BoxDecoration(
                                 color: Colors.white.withOpacity(0.5),
@@ -90,7 +94,7 @@ class HomePage extends StatelessWidget {
                                     ),
                                     const SizedBox(),
                                     const Text(
-                                      "About this",
+                                      "About PPD",
                                       style: TextStyle(
                                           fontFamily: "Lemon Milk",
                                           fontSize: 18,
@@ -105,6 +109,7 @@ class HomePage extends StatelessWidget {
                           //Community
                           InkWell(
                               onTap: (){},
+                              borderRadius: BorderRadius.circular(20),
                               child: Container(
                                 decoration: BoxDecoration(
                                     color: Colors.white.withOpacity(0.5),
@@ -140,6 +145,7 @@ class HomePage extends StatelessWidget {
                           //Appointment
                           InkWell(
                               onTap: (){},
+                              borderRadius: BorderRadius.circular(20),
                               child: Container(
                                 decoration: BoxDecoration(
                                     color: Colors.white.withOpacity(0.5),
@@ -175,6 +181,7 @@ class HomePage extends StatelessWidget {
                           //Diary
                           InkWell(
                               onTap: (){},
+                              borderRadius: BorderRadius.circular(20),
                               child: Container(
                                 decoration: BoxDecoration(
                                     color: Colors.white.withOpacity(0.5),
@@ -210,6 +217,7 @@ class HomePage extends StatelessWidget {
                           // AI Bot
                           InkWell(
                               onTap: (){},
+                              borderRadius: BorderRadius.circular(20),
                               child: Container(
                                 decoration: BoxDecoration(
                                     color: Colors.white.withOpacity(0.5),
@@ -245,6 +253,7 @@ class HomePage extends StatelessWidget {
                           // Profile
                           InkWell(
                               onTap: (){},
+                              borderRadius: BorderRadius.circular(20),
                               child: Container(
                                 decoration: BoxDecoration(
                                     color: Colors.white.withOpacity(0.5),
