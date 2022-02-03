@@ -37,9 +37,34 @@ class HomePage extends StatelessWidget {
                   child: Column(
                     children: <Widget>[
                       Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: <Widget>[
                           InkWell(
-                            child: ,
+                            child: Image.asset(
+                              "assets/images/bell.png",
+                              height: 30,
+                              color: Colors.white,
+                            ),
+                          ),
+                          InkWell(
+                            child: Image.asset(
+                              "assets/images/gear.png",
+                              height: 30,
+                              color: Colors.white,
+                            ),
+                          )
+                        ],
+                      ),
+
+                      const SizedBox(height: 20,),
+
+                      GridView.count(
+                        crossAxisCount: 2,
+                        children: <Widget>[
+                          InkWell(
+                            child: Image.asset(
+
+                            ),
                           )
                         ],
                       )
