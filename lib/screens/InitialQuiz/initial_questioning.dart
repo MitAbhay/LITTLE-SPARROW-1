@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:flutter/services.dart';
 import 'package:little_sparrow/screens/InitialQuiz/quiz.dart';
 import 'package:little_sparrow/screens/InitialQuiz/result.dart';
 
@@ -131,6 +131,16 @@ class _InitialQuestionsState extends State<InitialQuestions> {
 
   @override
   Widget build(BuildContext context) {
+
+    SystemChrome.setSystemUIOverlayStyle(
+        const SystemUiOverlayStyle(
+          statusBarColor: Colors.transparent,
+          //color set to transperent or set your own color
+          statusBarIconBrightness: Brightness.dark,
+          //set brightness for icons, like dark background light icons
+        )
+    );
+
     return MaterialApp(
       home: Scaffold(
         body: Padding(

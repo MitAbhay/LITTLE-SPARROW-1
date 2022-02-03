@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:little_sparrow/screens/InitialQuiz/initial_questioning.dart';
-import 'package:little_sparrow/screens/LogIn/login.dart';
+// import 'package:little_sparrow/models/user_details.dart';
+// import 'package:little_sparrow/screens/InitialQuiz/initial_questioning.dart';
+// import 'package:little_sparrow/screens/LogIn/login.dart';
 import 'package:little_sparrow/screens/UserDetailsEntry/user_basic_details_enrty.dart';
 
 void main() async {
@@ -30,9 +31,9 @@ class MyApp extends StatelessWidget {
         )
     );
 
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: InitialQuestions(),
+      home: BasicDataEntry(),
     );
   }
 }
