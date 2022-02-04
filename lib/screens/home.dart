@@ -37,6 +37,9 @@ class HomePage extends StatelessWidget {
                   child: SingleChildScrollView(
                     child: Column(
                       children: <Widget>[
+                        const SizedBox(
+                          height: 10,
+                        ),
 
                         // Notification and Setting Icon
                         Row(
@@ -63,7 +66,7 @@ class HomePage extends StatelessWidget {
                           ],
                         ),
 
-                        const SizedBox(height: 40,),
+                        const SizedBox(height: 20,),
 
                         GridView.count(
                           crossAxisCount: 2,
