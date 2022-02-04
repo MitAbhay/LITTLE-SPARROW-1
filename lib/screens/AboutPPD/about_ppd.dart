@@ -63,6 +63,7 @@ class AboutPPD extends StatelessWidget {
                 ),
                 const SizedBox(height: 20,),
                 RichText(
+                  textAlign: TextAlign.justify,
                   text: const TextSpan(
                     children: <TextSpan> [
                       TextSpan(
@@ -103,6 +104,7 @@ class AboutPPD extends StatelessWidget {
                 ),
                 const SizedBox(height: 20,),
                 RichText(
+                  textAlign: TextAlign.justify,
                   text: const TextSpan(
                     children: <TextSpan>[
                       TextSpan(
@@ -137,6 +139,7 @@ class AboutPPD extends StatelessWidget {
                 ),
                 const SizedBox(height: 20,),
                 RichText(
+                  textAlign: TextAlign.justify,
                   text: const TextSpan(
                       children: <TextSpan>[
                         TextSpan(

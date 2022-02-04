@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:little_sparrow/screens/AboutPPD/about_ppd.dart';
+import 'package:little_sparrow/screens/AboutUs/about_us.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -25,6 +26,8 @@ class HomePage extends StatelessWidget {
         body: SafeArea(
           child: Stack(
             children: <Widget>[
+
+              // Screen Bg Image
               Align(
                 alignment: Alignment.bottomCenter,
                 child: Image.asset(
@@ -340,7 +343,14 @@ class HomePage extends StatelessWidget {
                             ),
                             //About Us
                             InkWell(
-                                onTap: (){},
+                                onTap: (){
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) => const AboutUs()
+                                      )
+                                  );
+                                },
                                 borderRadius: BorderRadius.circular(20),
                                 child: Container(
                                   decoration: BoxDecoration(
@@ -377,7 +387,9 @@ class HomePage extends StatelessWidget {
 
 
                           ],
-                        )
+                        ),
+
+                        const SizedBox(height: 20,),
                       ],
                     ),
                   )

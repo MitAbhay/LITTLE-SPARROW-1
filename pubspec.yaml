@@ -94,9 +94,15 @@ flutter:
     - assets/images/lyingDepressedWoman.jpg
     - assets/images/symptomsPPD.jpg
     - assets/images/symptomsPPD.png
+    - assets/images/anurag.jpg
+    - assets/images/abhay.jpg
+    - assets/images/aastha.jpg
+    - assets/images/stuti.jpg
     - assets/gif/girl_1.gif
     - assets/gif/girl_3.gif
     - assets/gif/girl_15.gif
+    - assets/gif/girl_16.gif
+    - assets/gif/girl_16(1).gif
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
