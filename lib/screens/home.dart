@@ -368,7 +368,7 @@ class HomePage extends StatelessWidget {
                                         const SizedBox(),
                                         Image.asset(
                                           "assets/images/info.png",
-                                          height: 80,
+                                          height: 70,
                                         ),
                                         const SizedBox(),
                                         const Text(

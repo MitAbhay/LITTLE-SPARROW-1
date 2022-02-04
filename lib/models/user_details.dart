@@ -14,6 +14,7 @@ class UserDetail {
   DateTime? userDateOfBirth;
   DateTime? userDeliveryDate;
   bool? userSingleMother;
+  bool userInitialTestTaken = false;
   int? userChildNo;
   int? userInitialScore;
   List<String>? userPreferredContacts;
