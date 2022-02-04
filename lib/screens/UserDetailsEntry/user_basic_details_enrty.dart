@@ -5,6 +5,7 @@ import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:little_sparrow/screens/InitialQuiz/initial_questioning.dart';
 import 'package:little_sparrow/screens/UserDetailsEntry/user_remaining_data_entry.dart';
+import 'package:little_sparrow/screens/intro_page_1.dart';
 
 class BasicDataEntry extends StatefulWidget {
   const BasicDataEntry({Key? key}) : super(key: key);
@@ -374,7 +375,7 @@ class _BasicDataEntryState extends State<BasicDataEntry> {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => const RemainingDataEntry()
+                                      builder: (context) => const IntroToInitialQuiz()
                                   )
                               );
                             }
