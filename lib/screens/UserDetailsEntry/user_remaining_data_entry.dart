@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:little_sparrow/screens/home.dart';
 
 class RemainingDataEntry extends StatefulWidget {
@@ -16,48 +17,88 @@ class _RemainingDataEntryState extends State<RemainingDataEntry> {
   final _userJobController = TextEditingController();
   bool _userSingleMother = false;
 
+  // Alert Dialog
+  Future<void> _showMyDialog() async {
+    return showDialog<void>(
+      context: context,
+      barrierDismissible: false, // user must tap button!
+      builder: (BuildContext context) {
+        return AlertDialog(
+          shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(20)
+          ),
+          content: const Text(
+            'Details missing...',
+            style: TextStyle(
+              fontFamily: "Poppins",
+
+            ),
+          ),
+          actions: <Widget>[
+            TextButton(
+              child: const Text('Ok'),
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+            ),
+          ],
+        );
+      },
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
+
+    SystemChrome.setSystemUIOverlayStyle(
+        const SystemUiOverlayStyle(
+          statusBarColor: Colors.white,
+          //color set to transperent or set your own color
+          statusBarIconBrightness: Brightness.dark,
+          //set brightness for icons, like dark background light icons
+        )
+    );
+
     return Scaffold(
       resizeToAvoidBottomInset: false,
       backgroundColor: Colors.blue,
       body: SafeArea(
-        child: Column(
-          children: <Widget>[
-            Stack(
-              children: <Widget>[
-                Align(
-                  alignment: Alignment.topCenter,
-                  child: Container(
-                    height: 200,
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: const BorderRadius.only(
-                        bottomLeft: Radius.circular(200),
-                        // bottomRight: Radius.circular(60)
-                      ),
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.grey.withOpacity(0.5),
-                          // spreadRadius: 5,
-                          blurRadius: 7,
-                           // changes position of shadow
+        child: SingleChildScrollView(
+          child: Column(
+            children: <Widget>[
+              Stack(
+                children: <Widget>[
+                  Align(
+                    alignment: Alignment.topCenter,
+                    child: Container(
+                      height: 200,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: const BorderRadius.only(
+                          bottomLeft: Radius.circular(200),
+                          // bottomRight: Radius.circular(60)
                         ),
-                      ],
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey.withOpacity(0.5),
+                            // spreadRadius: 5,
+                            blurRadius: 7,
+                            // changes position of shadow
+                          ),
+                        ],
+                      ),
                     ),
                   ),
-                ),
-                Align(
-                  alignment: Alignment.topRight,
-                  child: Image.asset(
-                    "assets/gif/girl_15.gif",
-                    height: 200,
-                  ),
-                )
-              ],
-            ),
-            SingleChildScrollView(
-              child: Column(
+                  Align(
+                    alignment: Alignment.topRight,
+                    child: Image.asset(
+                      "assets/gif/girl_15.gif",
+                      height: 200,
+                    ),
+                  )
+                ],
+              ),
+              Column(
                 children: <Widget>[
                   const SizedBox(
                     height: 30,
@@ -82,8 +123,8 @@ class _RemainingDataEntryState extends State<RemainingDataEntry> {
                       decoration: InputDecoration(
                           labelText: "Country",
                           labelStyle: const TextStyle(
-                            fontFamily: "Bebas Neue",
-                            color: Colors.black
+                              fontFamily: "Bebas Neue",
+                              color: Colors.black
                           ),
                           enabledBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(20),
@@ -214,13 +255,13 @@ class _RemainingDataEntryState extends State<RemainingDataEntry> {
                                 ),
                               ),
                               Switch(
-                                  value: _userSingleMother,
-                                  onChanged: (value){
-                                    setState(() {
-                                      _userSingleMother = value;
-                                    });
-                                  },
-                                  activeColor: Colors.white,
+                                value: _userSingleMother,
+                                onChanged: (value){
+                                  setState(() {
+                                    _userSingleMother = value;
+                                  });
+                                },
+                                activeColor: Colors.white,
                               )
                             ]
                         ),
@@ -235,7 +276,7 @@ class _RemainingDataEntryState extends State<RemainingDataEntry> {
                     margin: const EdgeInsets.all(10),
                     width: MediaQuery.of(context).size.width * 0.8,
                     child: TextFormField(
-                      controller: _userPinCodeController,
+                      controller: _userJobController,
                       textAlign: TextAlign.center,
                       style: const TextStyle(
                         fontFamily: "Poppins",
@@ -273,12 +314,23 @@ class _RemainingDataEntryState extends State<RemainingDataEntry> {
                   //Proceed Button
                   ElevatedButton(
                       onPressed: (){
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => const HomePage()
-                            )
-                        );
+
+                        if (_userCountryController.text.isEmpty){
+                          _showMyDialog();
+                        } else if (_userStateController.text.isEmpty){
+                          _showMyDialog();
+                        } else if (_userPinCodeController.text.isEmpty){
+                          _showMyDialog();
+                        } else if (_userJobController.text.isEmpty) {
+                          _showMyDialog();
+                        } else {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const HomePage()
+                              )
+                          );
+                        }
                       },
                       child: const Text(
                         "Proceed",
@@ -296,8 +348,8 @@ class _RemainingDataEntryState extends State<RemainingDataEntry> {
 
                 ],
               ),
-            )
-          ],
+            ],
+          ),
         ),
       ),
     );

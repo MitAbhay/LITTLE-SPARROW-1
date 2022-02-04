@@ -602,10 +602,10 @@ library {
   maven_library {
     groupId: "io.flutter"
     artifactId: "flutter_embedding_release"
-    version: "1.0.0-74b74b10ea6764e373ca2bcb420fdb4a6f6b5918"
+    version: "1.0.0-5ac30ef0c70b76c5d5b5465b0ad4f08d5433684f"
   }
   digests {
-    sha256: "\r\202\341\263\017\314g\347\352\231\323\326P\241(7k\261\302\336\256\020&\253\v\237\263\250L\356y\355"
+    sha256: "_J\261ZOr\330\244\004\264\034\310\240_0\322\177\251\351\266=H\263\030N-js\201o\023\242"
   }
 }
 library {
@@ -689,35 +689,35 @@ library {
   maven_library {
     groupId: "io.flutter"
     artifactId: "armeabi_v7a_release"
-    version: "1.0.0-74b74b10ea6764e373ca2bcb420fdb4a6f6b5918"
+    version: "1.0.0-5ac30ef0c70b76c5d5b5465b0ad4f08d5433684f"
   }
   digests {
-    sha256: "v\330\004\vo(\346,\a\343v\305>\350\370\027\vh\245\277A\346y\303\320\353\006N\275N&\330"
+    sha256: "\316\305\033\020\002\004\235}\330L\215\3508ppQ\003d\326:k\264\355\026\r!_Vc\324\352\307"
   }
 }
 library {
   maven_library {
     groupId: "io.flutter"
     artifactId: "arm64_v8a_release"
-    version: "1.0.0-74b74b10ea6764e373ca2bcb420fdb4a6f6b5918"
+    version: "1.0.0-5ac30ef0c70b76c5d5b5465b0ad4f08d5433684f"
   }
   digests {
-    sha256: "}\220\nT\354_CPS\030[\266\350-\352$\201\256S\337C\315\001,\f#aw@c\310b"
+    sha256: "\301\353\b\361\206\307\023\002\237\345;\177\337G1\244\244=\317\3672\223\365\220\346\324\377\313X+m\325"
   }
 }
 library {
   maven_library {
     groupId: "io.flutter"
     artifactId: "x86_64_release"
-    version: "1.0.0-74b74b10ea6764e373ca2bcb420fdb4a6f6b5918"
+    version: "1.0.0-5ac30ef0c70b76c5d5b5465b0ad4f08d5433684f"
   }
   digests {
-    sha256: "x\005\300gz\372R\236\021\255\230+\350>\002\3139}\241^J\005\250\345\001\375K\370C\'A2"
+    sha256: "`n<*gH\261E\271\207\211\371\365\335\2661\355k\230Q\277\\\261\026\222\241\032\244\253c\252\264"
   }
 }
 library {
   digests {
-    sha256: "X\274!\343M\305OLTT\233\354L\315\024R\224\315\330r3\316\263Q\374\240\333@\177\340\366@"
+    sha256: "\257\035\001\375\f\363\330S\267\310\253H\v31\001\251R\377\036\245\026\305M\344\320J\bj\370\037\232"
   }
 }
 library_dependencies {

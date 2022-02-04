@@ -10,9 +10,9 @@ class HomePage extends StatelessWidget {
 
     SystemChrome.setSystemUIOverlayStyle(
         const SystemUiOverlayStyle(
-          statusBarColor: Colors.transparent,
+          statusBarColor: Color(0xfff27aa8),
           //color set to transperent or set your own color
-          statusBarIconBrightness: Brightness.dark,
+          statusBarIconBrightness: Brightness.light,
           //set brightness for icons, like dark background light icons
         )
     );
@@ -33,265 +33,343 @@ class HomePage extends StatelessWidget {
               Align(
                 alignment: Alignment.topCenter,
                 child: Container(
-                  margin: const EdgeInsets.all(20),
-                  child: Column(
-                    children: <Widget>[
+                  margin: const EdgeInsets.symmetric(horizontal: 20),
+                  child: SingleChildScrollView(
+                    child: Column(
+                      children: <Widget>[
 
-                      // Notification and Setting Icon
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: <Widget>[
-                          //Notification
-                          InkWell(
-                            child: Image.asset(
-                              "assets/images/bell.png",
-                              height: 30,
-                              color: Colors.white,
-                            ),
-                          ),
-                          //Setting
-                          InkWell(
-                            child: Image.asset(
-                              "assets/images/gear.png",
-                              height: 30,
-                              color: Colors.white,
-                            ),
-                          )
-                        ],
-                      ),
-
-                      const SizedBox(height: 40,),
-
-                      GridView.count(
-                        crossAxisCount: 2,
-                        mainAxisSpacing: 15,
-                        crossAxisSpacing: 15,
-                        shrinkWrap: true,
-                        scrollDirection: Axis.vertical,
-                        primary: false,
-                        children: <Widget>[
-                          // Postpartum Depression
-                          InkWell(
-                            onTap: (){},
-                            borderRadius: BorderRadius.circular(20),
-                            child: Container(
-                              decoration: BoxDecoration(
-                                color: Colors.white.withOpacity(0.5),
-                                borderRadius: BorderRadius.circular(20)
+                        // Notification and Setting Icon
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: <Widget>[
+                            //Notification
+                            InkWell(
+                              onTap: (){},
+                              child: Image.asset(
+                                "assets/images/bell.png",
+                                height: 30,
+                                color: Colors.white,
                               ),
-                              child: Padding(
-                                padding: const EdgeInsets.symmetric(
-                                  vertical: 15,
-                                ),
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: <Widget>[
-                                    const SizedBox(),
-                                    Image.asset(
-                                      "assets/images/postpartumDepression.png",
-                                      height: 80,
-                                    ),
-                                    const SizedBox(),
-                                    const Text(
-                                      "About PPD",
-                                      style: TextStyle(
-                                          fontFamily: "Lemon Milk",
-                                          fontSize: 18,
-                                          color: Colors.black
-                                      ),
-                                    )
-                                  ],
-                                ),
+                            ),
+                            //Setting
+                            InkWell(
+                              onTap: (){},
+                              child: Image.asset(
+                                "assets/images/gear.png",
+                                height: 30,
+                                color: Colors.white,
                               ),
                             )
-                          ),
-                          //Community
-                          InkWell(
-                              onTap: (){},
-                              borderRadius: BorderRadius.circular(20),
-                              child: Container(
-                                decoration: BoxDecoration(
-                                    color: Colors.white.withOpacity(0.5),
-                                    borderRadius: BorderRadius.circular(20)
-                                ),
-                                child: Padding(
-                                  padding: const EdgeInsets.symmetric(
-                                    vertical: 15,
+                          ],
+                        ),
+
+                        const SizedBox(height: 40,),
+
+                        GridView.count(
+                          crossAxisCount: 2,
+                          mainAxisSpacing: 15,
+                          crossAxisSpacing: 15,
+                          shrinkWrap: true,
+                          scrollDirection: Axis.vertical,
+                          primary: false,
+                          children: <Widget>[
+                            // Postpartum Depression
+                            InkWell(
+                                onTap: (){},
+                                borderRadius: BorderRadius.circular(20),
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                      color: Colors.white.withOpacity(0.5),
+                                      borderRadius: BorderRadius.circular(20)
                                   ),
-                                  child: Column(
-                                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                                    crossAxisAlignment: CrossAxisAlignment.center,
-                                    children: <Widget>[
-                                      const SizedBox(),
-                                      Image.asset(
-                                        "assets/images/community.png",
-                                        height: 80,
-                                      ),
-                                      const SizedBox(),
-                                      const Text(
-                                        "Community",
-                                        style: TextStyle(
-                                            fontFamily: "Lemon Milk",
-                                            fontSize: 18,
-                                            color: Colors.black
+                                  child: Padding(
+                                    padding: const EdgeInsets.symmetric(
+                                      vertical: 15,
+                                    ),
+                                    child: Column(
+                                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                      children: <Widget>[
+                                        Image.asset(
+                                          "assets/images/PPD.png",
+                                          height: 120,
                                         ),
-                                      )
-                                    ],
-                                  ),
-                                ),
-                              )
-                          ),
-                          //Appointment
-                          InkWell(
-                              onTap: (){},
-                              borderRadius: BorderRadius.circular(20),
-                              child: Container(
-                                decoration: BoxDecoration(
-                                    color: Colors.white.withOpacity(0.5),
-                                    borderRadius: BorderRadius.circular(20)
-                                ),
-                                child: Padding(
-                                  padding: const EdgeInsets.symmetric(
-                                    vertical: 15,
-                                  ),
-                                  child: Column(
-                                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                                    crossAxisAlignment: CrossAxisAlignment.center,
-                                    children: <Widget>[
-                                      const SizedBox(),
-                                      Image.asset(
-                                        "assets/images/appointment.png",
-                                        height: 80,
-                                      ),
-                                      const SizedBox(),
-                                      const Text(
-                                        "Appointment",
-                                        style: TextStyle(
-                                            fontFamily: "Lemon Milk",
-                                            fontSize: 18,
-                                            color: Colors.black
+
+                                        const Text(
+                                          "About PPD",
+                                          style: TextStyle(
+                                              fontFamily: "Lemon Milk",
+                                              fontSize: 18,
+                                              color: Colors.black
+                                          ),
                                         ),
-                                      )
-                                    ],
+                                        const SizedBox(
+                                          height: 4,
+                                        )
+                                      ],
+                                    ),
                                   ),
-                                ),
-                              )
-                          ),
-                          //Diary
-                          InkWell(
-                              onTap: (){},
-                              borderRadius: BorderRadius.circular(20),
-                              child: Container(
-                                decoration: BoxDecoration(
-                                    color: Colors.white.withOpacity(0.5),
-                                    borderRadius: BorderRadius.circular(20)
-                                ),
-                                child: Padding(
-                                  padding: const EdgeInsets.symmetric(
-                                    vertical: 15,
+                                )
+                            ),
+                            //Community
+                            InkWell(
+                                onTap: (){},
+                                borderRadius: BorderRadius.circular(20),
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                      color: Colors.white.withOpacity(0.5),
+                                      borderRadius: BorderRadius.circular(20)
                                   ),
-                                  child: Column(
-                                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                                    crossAxisAlignment: CrossAxisAlignment.center,
-                                    children: <Widget>[
-                                      const SizedBox(),
-                                      Image.asset(
-                                        "assets/images/diary.png",
-                                        height: 80,
-                                      ),
-                                      const SizedBox(),
-                                      const Text(
-                                        "Diary",
-                                        style: TextStyle(
-                                            fontFamily: "Lemon Milk",
-                                            fontSize: 18,
-                                            color: Colors.black
+                                  child: Padding(
+                                    padding: const EdgeInsets.symmetric(
+                                      vertical: 15,
+                                    ),
+                                    child: Column(
+                                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                      children: <Widget>[
+                                        const SizedBox(),
+                                        Image.asset(
+                                          "assets/images/community.png",
+                                          height: 80,
                                         ),
-                                      )
-                                    ],
+                                        const SizedBox(),
+                                        const Text(
+                                          "Community",
+                                          style: TextStyle(
+                                              fontFamily: "Lemon Milk",
+                                              fontSize: 18,
+                                              color: Colors.black
+                                          ),
+                                        )
+                                      ],
+                                    ),
                                   ),
-                                ),
-                              )
-                          ),
-                          // AI Bot
-                          InkWell(
-                              onTap: (){},
-                              borderRadius: BorderRadius.circular(20),
-                              child: Container(
-                                decoration: BoxDecoration(
-                                    color: Colors.white.withOpacity(0.5),
-                                    borderRadius: BorderRadius.circular(20)
-                                ),
-                                child: Padding(
-                                  padding: const EdgeInsets.symmetric(
-                                    vertical: 15,
+                                )
+                            ),
+                            //Appointment
+                            InkWell(
+                                onTap: (){},
+                                borderRadius: BorderRadius.circular(20),
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                      color: Colors.white.withOpacity(0.5),
+                                      borderRadius: BorderRadius.circular(20)
                                   ),
-                                  child: Column(
-                                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                                    crossAxisAlignment: CrossAxisAlignment.center,
-                                    children: <Widget>[
-                                      const SizedBox(),
-                                      Image.asset(
-                                        "assets/images/robot.png",
-                                        height: 80,
-                                      ),
-                                      const SizedBox(),
-                                      const Text(
-                                        "AI Bot",
-                                        style: TextStyle(
-                                            fontFamily: "Lemon Milk",
-                                            fontSize: 18,
-                                            color: Colors.black
+                                  child: Padding(
+                                    padding: const EdgeInsets.symmetric(
+                                      vertical: 15,
+                                    ),
+                                    child: Column(
+                                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                      children: <Widget>[
+                                        const SizedBox(),
+                                        Image.asset(
+                                          "assets/images/appointment.png",
+                                          height: 80,
                                         ),
-                                      )
-                                    ],
+                                        const SizedBox(),
+                                        const Text(
+                                          "Appointment",
+                                          style: TextStyle(
+                                              fontFamily: "Lemon Milk",
+                                              fontSize: 18,
+                                              color: Colors.black
+                                          ),
+                                        )
+                                      ],
+                                    ),
                                   ),
-                                ),
-                              )
-                          ),
-                          // Profile
-                          InkWell(
-                              onTap: (){},
-                              borderRadius: BorderRadius.circular(20),
-                              child: Container(
-                                decoration: BoxDecoration(
-                                    color: Colors.white.withOpacity(0.5),
-                                    borderRadius: BorderRadius.circular(20)
-                                ),
-                                child: Padding(
-                                  padding: const EdgeInsets.symmetric(
-                                    vertical: 15,
+                                )
+                            ),
+                            //Diary
+                            InkWell(
+                                onTap: (){},
+                                borderRadius: BorderRadius.circular(20),
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                      color: Colors.white.withOpacity(0.5),
+                                      borderRadius: BorderRadius.circular(20)
                                   ),
-                                  child: Column(
-                                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                                    crossAxisAlignment: CrossAxisAlignment.center,
-                                    children: <Widget>[
-                                      const SizedBox(),
-                                      Image.asset(
-                                        "assets/images/womanProfile.png",
-                                        height: 80,
-                                      ),
-                                      const SizedBox(),
-                                      const Text(
-                                        "Profile",
-                                        style: TextStyle(
-                                            fontFamily: "Lemon Milk",
-                                            fontSize: 18,
-                                            color: Colors.black
+                                  child: Padding(
+                                    padding: const EdgeInsets.symmetric(
+                                      vertical: 15,
+                                    ),
+                                    child: Column(
+                                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                      children: <Widget>[
+                                        const SizedBox(),
+                                        Image.asset(
+                                          "assets/images/diary.png",
+                                          height: 80,
                                         ),
-                                      )
-                                    ],
+                                        const SizedBox(),
+                                        const Text(
+                                          "Diary",
+                                          style: TextStyle(
+                                              fontFamily: "Lemon Milk",
+                                              fontSize: 18,
+                                              color: Colors.black
+                                          ),
+                                        )
+                                      ],
+                                    ),
                                   ),
-                                ),
-                              )
-                          ),
+                                )
+                            ),
+                            // AI Bot
+                            InkWell(
+                                onTap: (){},
+                                borderRadius: BorderRadius.circular(20),
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                      color: Colors.white.withOpacity(0.5),
+                                      borderRadius: BorderRadius.circular(20)
+                                  ),
+                                  child: Padding(
+                                    padding: const EdgeInsets.symmetric(
+                                      vertical: 15,
+                                    ),
+                                    child: Column(
+                                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                      children: <Widget>[
+                                        const SizedBox(),
+                                        Image.asset(
+                                          "assets/images/robot.png",
+                                          height: 80,
+                                        ),
+                                        const SizedBox(),
+                                        const Text(
+                                          "AI Bot",
+                                          style: TextStyle(
+                                              fontFamily: "Lemon Milk",
+                                              fontSize: 18,
+                                              color: Colors.black
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                  ),
+                                )
+                            ),
+                            // Profile
+                            InkWell(
+                                onTap: (){},
+                                borderRadius: BorderRadius.circular(20),
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                      color: Colors.white.withOpacity(0.5),
+                                      borderRadius: BorderRadius.circular(20)
+                                  ),
+                                  child: Padding(
+                                    padding: const EdgeInsets.symmetric(
+                                      vertical: 15,
+                                    ),
+                                    child: Column(
+                                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                      children: <Widget>[
+                                        const SizedBox(),
+                                        Image.asset(
+                                          "assets/images/womanProfile.png",
+                                          height: 80,
+                                        ),
+                                        const SizedBox(),
+                                        const Text(
+                                          "Profile",
+                                          style: TextStyle(
+                                              fontFamily: "Lemon Milk",
+                                              fontSize: 18,
+                                              color: Colors.black
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                  ),
+                                )
+                            ),
+                            // Confidence Booster
+                            InkWell(
+                                onTap: (){},
+                                borderRadius: BorderRadius.circular(20),
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                      color: Colors.white.withOpacity(0.5),
+                                      borderRadius: BorderRadius.circular(20)
+                                  ),
+                                  child: Padding(
+                                    padding: const EdgeInsets.symmetric(
+                                      vertical: 15,
+                                    ),
+                                    child: Column(
+                                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                      children: <Widget>[
+                                        const SizedBox(),
+                                        Image.asset(
+                                          "assets/images/love-yourself.png",
+                                          height: 80,
+                                        ),
+                                        const SizedBox(),
+                                        const Text(
+                                          "Confidence",
+                                          style: TextStyle(
+                                              fontFamily: "Lemon Milk",
+                                              fontSize: 18,
+                                              color: Colors.black
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                  ),
+                                )
+                            ),
+                            //About Us
+                            InkWell(
+                                onTap: (){},
+                                borderRadius: BorderRadius.circular(20),
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                      color: Colors.white.withOpacity(0.5),
+                                      borderRadius: BorderRadius.circular(20)
+                                  ),
+                                  child: Padding(
+                                    padding: const EdgeInsets.symmetric(
+                                      vertical: 15,
+                                    ),
+                                    child: Column(
+                                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                      children: <Widget>[
+                                        const SizedBox(),
+                                        Image.asset(
+                                          "assets/images/info.png",
+                                          height: 80,
+                                        ),
+                                        const SizedBox(),
+                                        const Text(
+                                          "About Us",
+                                          style: TextStyle(
+                                              fontFamily: "Lemon Milk",
+                                              fontSize: 18,
+                                              color: Colors.black
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                  ),
+                                )
+                            ),
 
 
-                        ],
-                      )
-                    ],
-                  ),
+                          ],
+                        )
+                      ],
+                    ),
+                  )
                 ),
               )
             ],
