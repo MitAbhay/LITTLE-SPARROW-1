@@ -143,15 +143,27 @@ class _InitialQuestionsState extends State<InitialQuestions> {
 
     return MaterialApp(
       home: Scaffold(
-        body: Padding(
-          padding: const EdgeInsets.all(30.0),
-          child: _questionIndex < _initialQuestions.length
-              ? Quiz(
-            answerQuestion: _answerQuestion,
-            questionIndex: _questionIndex,
-            questions: _initialQuestions,
-          ) //Quiz
-              : Result(_totalScore, _resetQuiz),
+        backgroundColor: const Color(0xfff5eae4),
+        body: Stack(
+          children: <Widget>[
+            Align(
+              alignment: Alignment.bottomCenter,
+              child: Image.asset(
+                "assets/gif/girl_29.gif",
+                height: MediaQuery.of(context).size.height * 0.4,
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(30.0),
+              child: _questionIndex < _initialQuestions.length
+                  ? Quiz(
+                answerQuestion: _answerQuestion,
+                questionIndex: _questionIndex,
+                questions: _initialQuestions,
+              ) //Quiz
+                  : Result(_totalScore, _resetQuiz),
+            ),
+          ],
         ), //Padding
       ), //Scaffold
       debugShowCheckedModeBanner: false,

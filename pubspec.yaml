@@ -108,6 +108,7 @@ flutter:
     - assets/gif/girl_15.gif
     - assets/gif/girl_16.gif
     - assets/gif/girl_16(1).gif
+    - assets/gif/girl_29.gif
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

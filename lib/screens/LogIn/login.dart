@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:little_sparrow/screens/InitialQuiz/initial_questioning.dart';
+import 'package:little_sparrow/screens/UserDetailsEntry/user_basic_details_enrty.dart';
 import 'package:little_sparrow/screens/home.dart';
 
 // import 'package:tele_doc/widget/otp_verify.dart';
@@ -52,7 +53,7 @@ class _MobileAuthState extends State<MobileAuth> {
 
       if (authCredential.user != null) {
         Navigator.push(context,
-            MaterialPageRoute(builder: (context) => const InitialQuestions()));
+            MaterialPageRoute(builder: (context) => const BasicDataEntry()));
       }
     } on FirebaseAuthException catch (e) {
       setState(() {

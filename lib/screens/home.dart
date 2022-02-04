@@ -14,7 +14,7 @@ class HomePage extends StatelessWidget {
         const SystemUiOverlayStyle(
           statusBarColor: Color(0xfff27aa8),
           //color set to transperent or set your own color
-          statusBarIconBrightness: Brightness.light,
+          statusBarIconBrightness: Brightness.dark,
           //set brightness for icons, like dark background light icons
         )
     );
