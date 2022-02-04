@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:little_sparrow/screens/AboutPPD/about_ppd.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -78,7 +79,14 @@ class HomePage extends StatelessWidget {
                           children: <Widget>[
                             // Postpartum Depression
                             InkWell(
-                                onTap: (){},
+                                onTap: (){
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) => const AboutPPD()
+                                      )
+                                  );
+                                },
                                 borderRadius: BorderRadius.circular(20),
                                 child: Container(
                                   decoration: BoxDecoration(
