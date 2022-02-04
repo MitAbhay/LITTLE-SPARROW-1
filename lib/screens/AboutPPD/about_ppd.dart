@@ -7,6 +7,16 @@ class AboutPPD extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    SystemChrome.setSystemUIOverlayStyle(
+        const SystemUiOverlayStyle(
+          statusBarColor: Colors.white,
+          //color set to transperent or set your own color
+          statusBarIconBrightness: Brightness.light,
+          //set brightness for icons, like dark background light icons
+        )
+    );
+
     return SafeArea(
       child: Scaffold(
         backgroundColor: Colors.white,
@@ -146,7 +156,7 @@ class AboutPPD extends StatelessWidget {
                       ]
                   ),
                 ),
-                const SizedBox(height: 15,),
+                const SizedBox(height: 20,),
                 const Text(
                   "Symptoms",
                   style: TextStyle(
@@ -155,7 +165,16 @@ class AboutPPD extends StatelessWidget {
                       fontSize: 23
                   ),
                 ),
+                const SizedBox(height: 30,),
+                Center(
+                    child: Image.asset(
+                      "assets/images/symptomsPPD.png",
+
+                    )
+                ),
+                const SizedBox(height: 20,),
                 const BulletedList(
+                  bullet: Icon(Icons.air),
                   bulletColor: Colors.black,
                   style: TextStyle(
                     fontFamily: "Poppins",
@@ -182,7 +201,8 @@ class AboutPPD extends StatelessWidget {
                     "Recurrent thoughts of death or suicide"
 
                   ],
-                )
+                ),
+                const SizedBox(height: 20,),
               ],
             ),
           ),
