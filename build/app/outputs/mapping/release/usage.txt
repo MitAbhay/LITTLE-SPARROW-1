@@ -785,6 +785,7 @@ androidx.core.app.NotificationCompat$Action$SemanticAction
 com.google.android.gms.tasks.CancellationToken
 androidx.annotation.RawRes
 kotlin.OverloadResolutionByLambdaReturnType
+io.flutter.plugins.urllauncher.R$layout
 androidx.fragment.R$dimen
 kotlinx.coroutines.internal.ExceptionsConstuctorKt:
     private static final kotlin.jvm.functions.Function1 safeCtor(kotlin.jvm.functions.Function1)
@@ -3601,6 +3602,7 @@ androidx.fragment.app.FragmentTabHost
 kotlinx.coroutines.flow.FlowKt__EmittersKt$onEmpty$lambda-5$$inlined$collect$1
 kotlin.time.TimeMark
 kotlin.jvm.internal.Ref$FloatRef
+io.flutter.plugins.urllauncher.R$id
 io.flutter.embedding.engine.renderer.FlutterRenderer:
     public android.graphics.Bitmap getBitmap()
     public void setAccessibilityFeatures(int)
@@ -3648,6 +3650,7 @@ com.google.android.gms.internal.firebase-auth-api.zzjm:
 io.flutter.embedding.engine.renderer.FlutterRenderer$ViewportMetrics:
     public static final int unsetValue
 com.google.android.gms.common.annotation.NonNullApi
+io.flutter.plugins.urllauncher.R
 io.flutter.embedding.engine.FlutterEngineConnectionRegistry$FlutterEngineContentProviderPluginBinding:
     void <init>(android.content.ContentProvider)
     public android.content.ContentProvider getContentProvider()
@@ -3810,6 +3813,7 @@ kotlin.collections.CollectionsKt__CollectionsKt:
     private static final void rangeCheck$CollectionsKt__CollectionsKt(int,int,int)
     public static final void throwCountOverflow()
     public void <init>()
+io.flutter.plugins.urllauncher.R$style
 androidx.cursoradapter.R
 androidx.core.provider.FontsContractCompat
 kotlinx.coroutines.SelectJoinOnCompletion
@@ -4260,8 +4264,8 @@ kotlin.coroutines.CoroutineContext$Element:
     public abstract kotlin.coroutines.CoroutineContext minusKey(kotlin.coroutines.CoroutineContext$Key)
 androidx.core.view.DisplayCompat
 com.google.firebase.ktx.R$dimen
-androidx.core.provider.FontRequestWorker$2
 com.google.android.gms.common.server.response.zan
+androidx.core.provider.FontRequestWorker$2
 com.google.android.gms.tasks.Task:
     public com.google.android.gms.tasks.Task addOnCanceledListener(com.google.android.gms.tasks.OnCanceledListener)
     public com.google.android.gms.tasks.Task addOnCanceledListener(android.app.Activity,com.google.android.gms.tasks.OnCanceledListener)
@@ -4532,6 +4536,7 @@ com.google.firebase.components.Component$Builder:
 com.google.android.gms.internal.firebase-auth-api.zzfj:
     static void <clinit>()
     static final synthetic int[] zza
+io.flutter.plugins.urllauncher.R$styleable
 kotlin.sequences.SequencesKt__SequencesKt:
     private static final kotlin.sequences.Sequence Sequence(kotlin.jvm.functions.Function0)
     public static final varargs kotlin.sequences.Sequence sequenceOf(java.lang.Object[])
@@ -4697,6 +4702,7 @@ androidx.core.widget.NestedScrollView
 kotlin.ReplaceWith
 com.google.firebase.installations.R$string
 io.flutter.plugins.firebase.auth.R$color
+io.flutter.plugins.urllauncher.R$string
 kotlin.io.ByteStreamsKt$iterator$1
 kotlin.coroutines.jvm.internal.RunSuspend
 androidx.coordinatorlayout.widget.CoordinatorLayout$SavedState
@@ -4784,6 +4790,8 @@ androidx.core.location.LocationManagerCompat$GpsStatusTransport$1
 kotlin.jvm.internal.LocalVariableReference
 kotlinx.coroutines.channels.ChannelsKt__DeprecatedKt
 androidx.core.app.NotificationCompat$DecoratedCustomViewStyle
+io.flutter.plugins.urllauncher.UrlLauncher:
+    private static final java.lang.String TAG
 kotlin.internal.AccessibleLateinitPropertyLiteral
 kotlin.jvm.internal.ShortSpreadBuilder
 com.google.android.gms.common.R$string:
@@ -4812,6 +4820,7 @@ kotlin.reflect.KType:
     public abstract java.util.List getArguments()
     public abstract boolean isMarkedNullable()
 com.google.firebase.analytics.FirebaseAnalytics$ConsentStatus
+io.flutter.plugins.urllauncher.R$drawable
 kotlinx.coroutines.flow.FlowKt__ErrorsKt$onErrorCollect$2
 com.google.android.gms.common.images.Size
 androidx.annotation.DimenRes
@@ -5643,6 +5652,7 @@ com.google.android.gms.common.util.CrashUtils:
 com.google.android.gms.common.util.ProcessUtils:
     private void <init>()
 kotlinx.coroutines.flow.internal.StackFrameContinuation
+io.flutter.plugins.urllauncher.R$color
 com.google.android.gms.common.internal.safeparcel.SafeParcelable$Field
 androidx.core.location.LocationManagerCompat$PreRGnssStatusTransport$2
 kotlinx.coroutines.channels.ChannelsKt__Channels_commonKt$toList$1
@@ -6492,7 +6502,6 @@ kotlinx.coroutines.flow.FlowKt__ContextKt$flowWith$$inlined$unsafeFlow$1
 androidx.swiperefreshlayout.widget.CircularProgressDrawable$ProgressDrawableSize
 androidx.core.os.HandlerCompat$Api28Impl
 io.flutter.plugin.common.MethodCall:
-    public java.lang.Object argument(java.lang.String)
     public boolean hasArgument(java.lang.String)
 androidx.core.text.TextDirectionHeuristicsCompat$TextDirectionHeuristicLocale
 com.google.android.gms.internal.common.zzu
@@ -6622,6 +6631,8 @@ com.google.firebase.components.Preconditions:
 kotlin.jvm.JvmOverloads
 androidx.swiperefreshlayout.widget.CircleImageView
 kotlin.ranges.UIntRange
+io.flutter.plugins.urllauncher.MethodCallHandlerImpl:
+    private static final java.lang.String TAG
 com.google.android.gms.common.data.DataBufferObserver$Observable
 kotlin.ranges.ClosedRange$DefaultImpls
 kotlinx.coroutines.ObsoleteCoroutinesApi
@@ -7856,6 +7867,7 @@ kotlinx.coroutines.flow.FlowKt__ZipKt$combineTransform$$inlined$combineTransform
 kotlinx.coroutines.flow.internal.ChannelFlowTransformLatest$flowCollect$3$invokeSuspend$$inlined$collect$1
 com.google.android.gms.common.server.response.zak
 com.google.android.gms.internal.safetynet.zzd
+io.flutter.plugins.urllauncher.R$integer
 com.google.firebase.heartbeatinfo.HeartBeatConsumerComponent$1
 kotlin.jvm.internal.markers.KMutableSet
 androidx.core.app.NotificationChannelGroupCompat$Builder
@@ -8264,6 +8276,7 @@ androidx.lifecycle.ComputableLiveData$3
 androidx.core.graphics.drawable.RoundedBitmapDrawable21
 com.google.android.gms.auth.api.phone.SmsRetrieverStatusCodes
 kotlinx.coroutines.flow.internal.ChannelFlowOperator
+io.flutter.plugins.urllauncher.R$attr
 androidx.fragment.app.FragmentTransition:
     static boolean supportsTransition()
     private void <init>()
@@ -8833,9 +8846,9 @@ com.google.android.gms.base.R
 com.google.android.gms.safetynet.SafetyNetApi$zzc
 androidx.customview.widget.ExploreByTouchHelper
 kotlinx.coroutines.flow.FlowKt__ReduceKt$single$$inlined$collect$1
-io.flutter.embedding.engine.systemchannels.PlatformChannel:
-    private static final java.lang.String TAG
 io.flutter.embedding.engine.systemchannels.PlatformViewsChannel:
+    private static final java.lang.String TAG
+io.flutter.embedding.engine.systemchannels.PlatformChannel:
     private static final java.lang.String TAG
 com.google.android.gms.common.server.response.zam
 com.google.android.gms.internal.measurement.zzgp:
@@ -9227,6 +9240,7 @@ kotlin.KotlinNothingValueException:
     public void <init>(java.lang.String,java.lang.Throwable)
     public void <init>(java.lang.Throwable)
 kotlin.io.AccessDeniedException
+io.flutter.plugins.urllauncher.BuildConfig
 com.google.firebase.installations.R$id
 com.google.firebase.BuildConfig
 androidx.browser.R$styleable
@@ -9527,6 +9541,9 @@ kotlin.sequences.SequencesKt__SequencesKt$ifEmpty$1
 com.google.android.gms.common.AccountPicker
 kotlin.ranges.ClosedDoubleRange
 kotlin.sequences.USequencesKt___USequencesKt
+io.flutter.plugins.urllauncher.UrlLauncherPlugin:
+    public static void registerWith(io.flutter.plugin.common.PluginRegistry$Registrar)
+    private static final java.lang.String TAG
 androidx.asynclayoutinflater.R$string
 com.google.android.gms.actions.ReserveIntents
 androidx.viewpager.widget.ViewPager$LayoutParams
@@ -10331,6 +10348,7 @@ kotlinx.coroutines.flow.FlowKt__ZipKt$combine$$inlined$combineUnsafe$FlowKt__Zip
 kotlin.time.Duration$Companion
 androidx.core.text.TextDirectionHeuristicsCompat$AnyStrong
 org.intellij.lang.annotations.JdkConstants$TreeSelectionMode
+io.flutter.plugins.urllauncher.R$dimen
 com.google.firebase.auth.internal.zzac:
     public final com.google.android.gms.tasks.Task enroll(com.google.firebase.auth.MultiFactorAssertion,java.lang.String)
     public final com.google.android.gms.tasks.Task getSession()
@@ -12159,6 +12177,8 @@ com.google.android.gms.internal.firebase-auth-api.zzym
 com.google.android.gms.internal.firebase-auth-api.zzzp:
     private final com.google.android.gms.internal.firebase-auth-api.zzaaf zzab
     private final java.lang.Class zzad
+io.flutter.plugins.urllauncher.WebViewActivity$2:
+    final synthetic io.flutter.plugins.urllauncher.WebViewActivity this$0
 com.google.android.gms.internal.measurement.zzgb:
     public static com.google.android.gms.internal.measurement.zzfz zza()
     static synthetic void zzc(com.google.android.gms.internal.measurement.zzgb,com.google.android.gms.internal.measurement.zzfq)
@@ -12483,5 +12503,5 @@ kotlin.KotlinVersion:
     public static final kotlin.KotlinVersion$Companion Companion
 com.google.android.gms.measurement.internal.zzec:
     private java.lang.String zze
-io.flutter.plugin.platform.PlatformView$-CC
 io.flutter.plugin.common.BinaryMessenger$-CC
+io.flutter.plugin.platform.PlatformView$-CC
