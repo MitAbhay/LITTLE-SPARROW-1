@@ -7,6 +7,7 @@ import 'package:little_sparrow/screens/LogIn/login.dart';
 // import 'package:little_sparrow/screens/InitialQuiz/initial_questioning.dart';
 // import 'package:little_sparrow/screens/LogIn/login.dart';
 import 'package:little_sparrow/screens/UserDetailsEntry/user_basic_details_enrty.dart';
+import 'package:little_sparrow/screens/intro_page_1.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -35,7 +36,7 @@ class MyApp extends StatelessWidget {
 
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: InitialQuestions(),
+      home: IntroToInitialQuiz(),
     );
   }
 }

@@ -11,7 +11,7 @@ class AboutUs extends StatelessWidget {
         const SystemUiOverlayStyle(
           statusBarColor: Colors.white,
           //color set to transperent or set your own color
-          statusBarIconBrightness: Brightness.light,
+          statusBarIconBrightness: Brightness.dark,
           //set brightness for icons, like dark background light icons
         )
     );
@@ -124,66 +124,6 @@ class AboutUs extends StatelessWidget {
                 ),
                 const SizedBox(height: 20,),
 
-                // Anurag Tripathi
-                Center(
-                  child: Column(
-                      children: <Widget>[
-                        ClipRRect(
-                          borderRadius: BorderRadius.circular(15),
-                          child: Image.asset(
-                              "assets/images/anurag.jpg"
-                          ),
-                        ),
-                        const SizedBox(height: 5,),
-                        const Text(
-                          "Anurag Tripathi",
-                          style: TextStyle(
-                            fontFamily: "Poppins",
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold
-                          ),
-                        ),
-                        const SizedBox(height: 5,),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: <Widget>[
-                              InkWell(
-                                onTap:  () async {
-                                  const url = 'https://www.instagram.com/_lmao._.ded_/';
-                                  if(await canLaunch(url)){
-                                    await launch(url);
-                                  } else {
-                                    throw 'Could not launch $url';
-                                  }
-                                },
-                                child: Image.asset(
-                                  "assets/images/instagram.png",
-                                  height: 40,
-                                ),
-                              ),
-                              const SizedBox(width: 20,),
-                              InkWell(
-                              onTap:  () async {
-                                const url = 'https://www.linkedin.com/in/anurag-tripathi-7422291b4/';
-                                if(await canLaunch(url)){
-                                  await launch(url);
-                                } else {
-                                  throw 'Could not launch $url';
-                                }
-                              },
-                              child: Image.asset(
-                                "assets/images/linkedin.png",
-                                height: 40,
-                              ),
-                            )
-                          ],
-                        )
-                      ],
-                    ),
-                  ),
-                const SizedBox(height: 20,),
-                const Divider(),
-
                 // Aastha Beri
                 Center(
                   child: Column(
@@ -244,123 +184,183 @@ class AboutUs extends StatelessWidget {
                 const SizedBox(height: 20,),
                 const Divider(),
 
-                // Stuti Srivastava
-                Center(
-                  child: Column(
-                      children: <Widget>[
-                        ClipRRect(
-                          borderRadius: BorderRadius.circular(15),
-                          child: Image.asset(
-                              "assets/images/stuti.jpg"
-                          ),
-                        ),
-                        const SizedBox(height: 5,),
-                        const Text(
-                          "Stuti Srivastava",
-                          style: TextStyle(
-                            fontFamily: "Poppins",
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold
-                          ),
-                        ),
-                        const SizedBox(height: 5,),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: <Widget>[
-                            InkWell(
-                              onTap:  () async {
-                                const url = 'https://www.instagram.com/stuti__srivastava_/';
-                                if(await canLaunch(url)){
-                                  await launch(url);
-                                } else {
-                                  throw 'Could not launch $url';
-                                }
-                              },
-                              child: Image.asset(
-                                "assets/images/instagram.png",
-                                height: 40,
-                              ),
-                            ),
-                            const SizedBox(width: 20,),
-                            InkWell(
-                              onTap:  () async {
-                                const url = 'https://www.linkedin.com/in/stuti-srivastava-149192203/';
-                                if(await canLaunch(url)){
-                                  await launch(url);
-                                } else {
-                                  throw 'Could not launch $url';
-                                }
-                              },
-                              child: Image.asset(
-                                "assets/images/linkedin.png",
-                                height: 40,
-                              ),
-                            )
-                          ],
-                        )
-                      ],
-                    ),
-                  ),
-                const SizedBox(height: 20,),
-                const Divider(),
-
                 // Abhay K. Mittal
                 Center(
                   child: Column(
-                      children: <Widget>[
-                        ClipRRect(
-                          borderRadius: BorderRadius.circular(15),
-                          child: Image.asset(
-                              "assets/images/abhay.jpg"
-                          ),
+                    children: <Widget>[
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(15),
+                        child: Image.asset(
+                            "assets/images/abhay.jpg"
                         ),
-                        const SizedBox(height: 5,),
-                        const Text(
-                          "Abhay Kumar Mittal",
-                          style: TextStyle(
+                      ),
+                      const SizedBox(height: 5,),
+                      const Text(
+                        "Abhay Kumar Mittal",
+                        style: TextStyle(
                             fontFamily: "Poppins",
                             fontSize: 20,
                             fontWeight: FontWeight.bold
-                          ),
                         ),
-                        const SizedBox(height: 5,),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: <Widget>[
-                            InkWell(
-                              onTap:  () async {
-                                const url = 'https://www.instagram.com/mitabhay/';
-                                if(await canLaunch(url)){
-                                  await launch(url);
-                                } else {
-                                  throw 'Could not launch $url';
-                                }
-                              },
-                              child: Image.asset(
-                                "assets/images/instagram.png",
-                                height: 40,
-                              ),
+                      ),
+                      const SizedBox(height: 5,),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          InkWell(
+                            onTap:  () async {
+                              const url = 'https://www.instagram.com/mitabhay/';
+                              if(await canLaunch(url)){
+                                await launch(url);
+                              } else {
+                                throw 'Could not launch $url';
+                              }
+                            },
+                            child: Image.asset(
+                              "assets/images/instagram.png",
+                              height: 40,
                             ),
-                            const SizedBox(width: 20,),
-                            InkWell(
-                              onTap:  () async {
-                                const url = 'https://www.linkedin.com/in/mitabhay/';
-                                if(await canLaunch(url)){
-                                  await launch(url);
-                                } else {
-                                  throw 'Could not launch $url';
-                                }
-                              },
-                              child: Image.asset(
-                                "assets/images/linkedin.png",
-                                height: 40,
-                              ),
-                            )
-                          ],
-                        )
-                      ],
-                    ),
+                          ),
+                          const SizedBox(width: 20,),
+                          InkWell(
+                            onTap:  () async {
+                              const url = 'https://www.linkedin.com/in/mitabhay/';
+                              if(await canLaunch(url)){
+                                await launch(url);
+                              } else {
+                                throw 'Could not launch $url';
+                              }
+                            },
+                            child: Image.asset(
+                              "assets/images/linkedin.png",
+                              height: 40,
+                            ),
+                          )
+                        ],
+                      )
+                    ],
                   ),
+                ),
+                const SizedBox(height: 20,),
+                const Divider(),
+
+                // Anurag Tripathi
+                Center(
+                  child: Column(
+                    children: <Widget>[
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(15),
+                        child: Image.asset(
+                            "assets/images/anurag.jpg"
+                        ),
+                      ),
+                      const SizedBox(height: 5,),
+                      const Text(
+                        "Anurag Tripathi",
+                        style: TextStyle(
+                            fontFamily: "Poppins",
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold
+                        ),
+                      ),
+                      const SizedBox(height: 5,),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          InkWell(
+                            onTap:  () async {
+                              const url = 'https://www.instagram.com/_lmao._.ded_/';
+                              if(await canLaunch(url)){
+                                await launch(url);
+                              } else {
+                                throw 'Could not launch $url';
+                              }
+                            },
+                            child: Image.asset(
+                              "assets/images/instagram.png",
+                              height: 40,
+                            ),
+                          ),
+                          const SizedBox(width: 20,),
+                          InkWell(
+                            onTap:  () async {
+                              const url = 'https://www.linkedin.com/in/anurag-tripathi-7422291b4/';
+                              if(await canLaunch(url)){
+                                await launch(url);
+                              } else {
+                                throw 'Could not launch $url';
+                              }
+                            },
+                            child: Image.asset(
+                              "assets/images/linkedin.png",
+                              height: 40,
+                            ),
+                          )
+                        ],
+                      )
+                    ],
+                  ),
+                ),
+                const SizedBox(height: 20,),
+                const Divider(),
+
+                // Stuti Srivastava
+                Center(
+                  child: Column(
+                    children: <Widget>[
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(15),
+                        child: Image.asset(
+                            "assets/images/stuti.jpg"
+                        ),
+                      ),
+                      const SizedBox(height: 5,),
+                      const Text(
+                        "Stuti Srivastava",
+                        style: TextStyle(
+                            fontFamily: "Poppins",
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold
+                        ),
+                      ),
+                      const SizedBox(height: 5,),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          InkWell(
+                            onTap:  () async {
+                              const url = 'https://www.instagram.com/stuti__srivastava_/';
+                              if(await canLaunch(url)){
+                                await launch(url);
+                              } else {
+                                throw 'Could not launch $url';
+                              }
+                            },
+                            child: Image.asset(
+                              "assets/images/instagram.png",
+                              height: 40,
+                            ),
+                          ),
+                          const SizedBox(width: 20,),
+                          InkWell(
+                            onTap:  () async {
+                              const url = 'https://www.linkedin.com/in/stuti-srivastava-149192203/';
+                              if(await canLaunch(url)){
+                                await launch(url);
+                              } else {
+                                throw 'Could not launch $url';
+                              }
+                            },
+                            child: Image.asset(
+                              "assets/images/linkedin.png",
+                              height: 40,
+                            ),
+                          )
+                        ],
+                      )
+                    ],
+                  ),
+                ),
                 const SizedBox(height: 20,),
 
                 const SizedBox(height: 20,),
