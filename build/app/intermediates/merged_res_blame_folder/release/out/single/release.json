@@ -1,9 +1,5 @@
 [
     {
-        "merged": "D:\\Flutter\\Project\\little_sparrow\\build\\app\\intermediates\\res\\merged\\release\\layout_notification_template_icon_group.xml.flat",
-        "source": "C:\\Users\\mysel\\.gradle\\caches\\transforms-2\\files-2.1\\ff453976176a403e13d8ed149ba417dd\\core-1.6.0\\res\\layout\\notification_template_icon_group.xml"
-    },
-    {
         "merged": "D:\\Flutter\\Project\\little_sparrow\\build\\app\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
         "source": "C:\\Users\\mysel\\.gradle\\caches\\transforms-2\\files-2.1\\0cd0c95cf645f00d921c59b7970ea12e\\jetified-play-services-base-17.1.0\\res\\drawable-xhdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
     },
@@ -68,10 +64,6 @@
         "source": "C:\\Users\\mysel\\.gradle\\caches\\transforms-2\\files-2.1\\0cd0c95cf645f00d921c59b7970ea12e\\jetified-play-services-base-17.1.0\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png"
     },
     {
-        "merged": "D:\\Flutter\\Project\\little_sparrow\\build\\app\\intermediates\\res\\merged\\release\\layout-v16_notification_template_custom_big.xml.flat",
-        "source": "C:\\Users\\mysel\\.gradle\\caches\\transforms-2\\files-2.1\\ff453976176a403e13d8ed149ba417dd\\core-1.6.0\\res\\layout-v16\\notification_template_custom_big.xml"
-    },
-    {
         "merged": "D:\\Flutter\\Project\\little_sparrow\\build\\app\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4_notification_bg_low_normal.9.png.flat",
         "source": "C:\\Users\\mysel\\.gradle\\caches\\transforms-2\\files-2.1\\ff453976176a403e13d8ed149ba417dd\\core-1.6.0\\res\\drawable-xhdpi-v4\\notification_bg_low_normal.9.png"
     },
@@ -108,10 +100,6 @@
         "source": "C:\\Users\\mysel\\.gradle\\caches\\transforms-2\\files-2.1\\0cd0c95cf645f00d921c59b7970ea12e\\jetified-play-services-base-17.1.0\\res\\drawable\\common_google_signin_btn_text_dark.xml"
     },
     {
-        "merged": "D:\\Flutter\\Project\\little_sparrow\\build\\app\\intermediates\\res\\merged\\release\\layout_notification_action_tombstone.xml.flat",
-        "source": "C:\\Users\\mysel\\.gradle\\caches\\transforms-2\\files-2.1\\ff453976176a403e13d8ed149ba417dd\\core-1.6.0\\res\\layout\\notification_action_tombstone.xml"
-    },
-    {
         "merged": "D:\\Flutter\\Project\\little_sparrow\\build\\app\\intermediates\\res\\merged\\release\\drawable-hdpi-v4_notification_bg_low_pressed.9.png.flat",
         "source": "C:\\Users\\mysel\\.gradle\\caches\\transforms-2\\files-2.1\\ff453976176a403e13d8ed149ba417dd\\core-1.6.0\\res\\drawable-hdpi-v4\\notification_bg_low_pressed.9.png"
     },
@@ -138,10 +126,6 @@
     {
         "merged": "D:\\Flutter\\Project\\little_sparrow\\build\\app\\intermediates\\res\\merged\\release\\mipmap-mdpi_ic_launcher.png.flat",
         "source": "D:\\Flutter\\Project\\little_sparrow\\android\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "D:\\Flutter\\Project\\little_sparrow\\build\\app\\intermediates\\res\\merged\\release\\layout_notification_action.xml.flat",
-        "source": "C:\\Users\\mysel\\.gradle\\caches\\transforms-2\\files-2.1\\ff453976176a403e13d8ed149ba417dd\\core-1.6.0\\res\\layout\\notification_action.xml"
     },
     {
         "merged": "D:\\Flutter\\Project\\little_sparrow\\build\\app\\intermediates\\res\\merged\\release\\mipmap-xxhdpi_launcher_icon.png.flat",
@@ -234,10 +218,6 @@
     {
         "merged": "D:\\Flutter\\Project\\little_sparrow\\build\\app\\intermediates\\res\\merged\\release\\drawable_common_google_signin_btn_icon_dark_normal.xml.flat",
         "source": "C:\\Users\\mysel\\.gradle\\caches\\transforms-2\\files-2.1\\0cd0c95cf645f00d921c59b7970ea12e\\jetified-play-services-base-17.1.0\\res\\drawable\\common_google_signin_btn_icon_dark_normal.xml"
-    },
-    {
-        "merged": "D:\\Flutter\\Project\\little_sparrow\\build\\app\\intermediates\\res\\merged\\release\\drawable_launch_background.xml.flat",
-        "source": "D:\\Flutter\\Project\\little_sparrow\\android\\app\\src\\main\\res\\drawable\\launch_background.xml"
     },
     {
         "merged": "D:\\Flutter\\Project\\little_sparrow\\build\\app\\intermediates\\res\\merged\\release\\layout_browser_actions_context_menu_row.xml.flat",

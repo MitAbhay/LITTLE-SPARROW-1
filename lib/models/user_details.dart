@@ -38,20 +38,20 @@ class UserDetail {
     print(userCurrentlyPregnant);
     print(userDeliveryDate);
     print(userChildNo);
-    userAge = calculateAge(userDateOfBirth);
+    userAge = calculateAge(userDateOfBirth!);
     print(userAge);
   }
 
-  calculateAge(DateTime? birthDate) {
+  calculateAge(DateTime birthDate) {
     DateTime currentDate = DateTime.now();
-    int age = currentDate.year - birthDate!.year;
+    int age = currentDate.year - birthDate.year;
     int month1 = currentDate.month;
-    int month2 = birthDate!.month;
+    int month2 = birthDate.month;
     if (month2 > month1) {
       age--;
     } else if (month1 == month2) {
       int day1 = currentDate.day;
-      int day2 = birthDate!.day;
+      int day2 = birthDate.day;
       if (day2 > day1) {
         age--;
       }
@@ -71,7 +71,9 @@ class UserDetail {
       this.userSingleMother,
       this.userJob,
       this.userDetailsFilled
-  );
+  ){
+    addUser();
+  }
 
   FirebaseFirestore firestore = FirebaseFirestore.instance;
 
@@ -79,12 +81,27 @@ class UserDetail {
 
   Future<void> addUser(){
     return userDetails
-        .add(
+        .doc(userMobile)
+        .set(
       {
         'name': name,
-
+        'country': userCountry,
+        'mobile': userMobile,
+        'state': userState,
+        'pincode': userPinCode,
+        'job': userJob,
+        'dob': userDateOfBirth,
+        'delivery date': userDeliveryDate,
+        'single mother': userSingleMother,
+        'currently pregnant': userCurrentlyPregnant,
+        'details filled': userDetailsFilled,
+        'initial test taken': userInitialTestTaken ,
+        'child no': userChildNo,
+        'age': userAge,
+        'initial test score': userInitialScore,
       }
-    );
+    ).then((value) => print("User Added"))
+      .catchError((error) => print("Failed to add user: $error"));
   }
 
 }

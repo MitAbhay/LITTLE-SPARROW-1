@@ -397,7 +397,9 @@ class _MobileAuthState extends State<MobileAuth> {
                 Container(
                   child: showLoading
                       ? const Center(
-                          child: CircularProgressIndicator(),
+                          child: CircularProgressIndicator(
+                            color: Color(0xff084d52),
+                          ),
                         )
                       : currentState == MobileVerificationState.SHOW_MOBILE_FORM_STATE
                       ? getMobileFormWidget(context)
