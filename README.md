@@ -16,13 +16,11 @@
   <h2 align="center">LITTLE SPARROW</h2>
 
   <p align="center">
-    An Application for solving the problem of Postmartum Depression
+    An Application for solving the problem of Postmartum Depression.
     <br />
     <a href="https://docs.google.com/presentation/d/1MTftF84CK2QUuVeUE3USoIupDVgb1AhyNT_g4CZv5c8/edit#slide=id.p"><strong>Explore the Presentation »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/triipaathii/LITTLE-SPARROW">View Demo</a>
-    ·
     <a href="https://github.com/triipaathii/LITTLE-SPARROW/issues">Report Bug</a>
     ·
     <a href="https://github.com/triipaathii/LITTLE-SPARROW/issues">Request Feature</a>
@@ -59,13 +57,40 @@
 
 ## About The Project
 <div align="center">
-<img src="assets/Screenshots/Screenshot_20220201_231519.png" alt="Logo" width="350" height="500">
+<img src="assets/Screenshots/ss2.jpeg" alt="ss" width="320" height="480">
+<img src="assets/Screenshots/ss3.jpeg" alt="ss" width="320" height="480">
+<img src="assets/Screenshots/ss4.jpeg" alt="ss" width="320" height="480">
+<img src="assets/Screenshots/ss5.jpeg" alt="ss" width="320" height="480">
 </div>
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
-Postpartum depression (PPD), also called postnatal depression, is a type of mood disorder associated with childbirth, which can affect both sexes. Symptoms may include extreme sadness, low energy, anxiety, crying episodes, irritability, and changes in sleeping or eating patterns. Onset is typically between one week and one month following childbirth. PPD can also negatively affect the newborn child.
+The hand that cradles is the hand that rules the world
 
-While the exact cause of PPD is unclear, the cause is believed to be a combination of physical, emotional, genetic, and social factors. These may include factors such as hormonal changes and sleep deprivation.Risk factors include prior episodes of postpartum depression, bipolar disorder, a family history of depression, psychological stress, complications of childbirth, lack of support, or a drug use disorder. Diagnosis is based on a person's symptoms.While most women experience a brief period of worry or unhappiness after delivery, postpartum depression should be suspected when symptoms are severe and last over two weeks
+True right? It is beyond our imagination what all mother does for their children. Without them, the world would fall in a single day. But being a mother takes a lot from a woman. A woman endures physical, mental, emotional, and physiological tolls in order to give life. Conceiving a baby is universally known as a stressful thing but what about the woman’s health after giving birth? And here we are talking not just about her physical health but also about her mind. 
+
+Postpartum Depression is the mental disturbance phase new mothers go through. The birth of a baby can trigger a jumble of emotions in a woman’s mind. This is caused by the sudden change in hormones after delivery, combined with stress, isolation, sleep deprivation, and fatigue. One might feel more tearful, overwhelmed, and emotionally fragile during these days. The postpartum period generally commences after a couple of days of delivery and ends within two to three weeks postpartum. But some new moms can experience a more severe, long-lasting form of depression known as postpartum depression. 
+
+In the initial days, postpartum depression may seem like the normal baby blues. Often postpartum depression and baby blues share the same symptoms, but obviously, postpartum depression varies a lot. Suicidal thoughts or the inability to properly nurture your little one are the primary stark differences. 
+
+- Symptoms of postpartum depression
+- Depressed mood or severe mood swings
+- Excessive crying
+- Difficulty bonding with your baby
+- Withdrawing from family and friends
+- Loss of appetite or eating much more than usual
+- Inability to sleep (insomnia) or sleeping too much
+- Overwhelming fatigue or loss of energy
+- Reduced interest and pleasure in activities you used to enjoy
+- Intense irritability and anger
+- Fear that you're not a good mother
+- Hopelessness
+- Feelings of worthlessness, shame, guilt or inadequacy
+- Diminished ability to think clearly, concentrate or make decisions
+- Restlessness
+- Severe anxiety and panic attacks
+- Thoughts of harming yourself or your baby
+- Recurrent thoughts of death or suicide
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -74,14 +99,16 @@ While the exact cause of PPD is unclear, the cause is believed to be a combinati
 We have used the following tech for this Application :
 
 - [Flutter](https://flutter.com/)
-- AI
-- ML
+- [Firebase](https://firebase.google.com/) 
+- [Android Studio](https://developer.android.com/)
+- [Dart](https://dart.dev/)
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
-## Getting Started
+<!-- ## Getting Started
 
 You can also Contribute to this project (LITTLE SPARROW) to make it more better and user friendly.
 
@@ -113,24 +140,20 @@ Follow the following points to run this in your system
     flutter run
     ```
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#top">back to top</a>)</p> -->
 
 <!-- USAGE EXAMPLES -->
 
 ## Our Vision
 
-Our Vision is to ......................................................
-.......................................................................
-.......................................................................
-.......................................................................
-.......................................................................
-.......................................................................
+We live in a world where half the population is female, and every female experiences the bliss of motherhood at some point in their life. The Postpartum Depression target rate is increasing with the increasing population. Nowadays, the global prevalence of PPD is 100-150 per 1000 births. PPD can be very toll taking on the health of a woman. We, at Little Sparrow, want to create a world where women can come up and break free of PPD. We want to live in a world where the masses know what Postpartum Depression is, and no one goes neglected. We want to create awareness among the crowd so that people can help new mothers in their struggles. The women community is progressing but somehow new mothers somewhere get neglected. Not being able to express their suffering hidden under joy can be a threat to their mental health. Little Sparrow wants to work for this cause believing that any type of mental health is a menace to everyone.
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
 
-## Contributing
+<!-- ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
@@ -143,7 +166,7 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#top">back to top</a>)</p> -->
 
 <!-- LICENSE -->
 <!-- ## License
