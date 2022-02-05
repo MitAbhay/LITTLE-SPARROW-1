@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:little_sparrow/models/user_details.dart';
 import 'package:little_sparrow/screens/home.dart';
 
 class RemainingDataEntry extends StatefulWidget {
@@ -110,6 +111,7 @@ class _RemainingDataEntryState extends State<RemainingDataEntry> {
                     margin: const EdgeInsets.all(10),
                     width: MediaQuery.of(context).size.width * 0.8,
                     child: TextFormField(
+                      keyboardType: TextInputType.text,
                       controller: _userCountryController,
                       textAlign: TextAlign.center,
                       style: const TextStyle(
@@ -152,6 +154,7 @@ class _RemainingDataEntryState extends State<RemainingDataEntry> {
                     child: TextFormField(
                       controller: _userStateController,
                       textAlign: TextAlign.center,
+                      keyboardType: TextInputType.text,
                       style: const TextStyle(
                         fontFamily: "Poppins",
                         fontSize: 20,
@@ -192,6 +195,7 @@ class _RemainingDataEntryState extends State<RemainingDataEntry> {
                     child: TextFormField(
                       controller: _userPinCodeController,
                       textAlign: TextAlign.center,
+                      keyboardType: TextInputType.number,
                       style: const TextStyle(
                         fontFamily: "Poppins",
                         fontSize: 20,
@@ -278,6 +282,7 @@ class _RemainingDataEntryState extends State<RemainingDataEntry> {
                     child: TextFormField(
                       controller: _userJobController,
                       textAlign: TextAlign.center,
+                      keyboardType: TextInputType.text,
                       style: const TextStyle(
                         fontFamily: "Poppins",
                         fontSize: 20,
@@ -324,6 +329,16 @@ class _RemainingDataEntryState extends State<RemainingDataEntry> {
                         } else if (_userJobController.text.isEmpty) {
                           _showMyDialog();
                         } else {
+
+                          UserDetail.remainingEntry(
+                              _userCountryController.text,
+                              _userStateController.text,
+                              _userPinCodeController.text,
+                              _userSingleMother,
+                              _userJobController.text,
+                              true
+                          );
+
                           Navigator.push(
                               context,
                               MaterialPageRoute(

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:little_sparrow/models/user_details.dart';
 import 'package:little_sparrow/screens/InitialQuiz/initial_questioning.dart';
 import 'package:little_sparrow/screens/UserDetailsEntry/user_basic_details_enrty.dart';
 import 'package:little_sparrow/screens/home.dart';
@@ -52,6 +53,7 @@ class _MobileAuthState extends State<MobileAuth> {
       });
 
       if (authCredential.user != null) {
+        UserDetail.mobileNumber(_mobileController.text);
         Navigator.push(context,
             MaterialPageRoute(builder: (context) => const BasicDataEntry()));
       }
@@ -324,7 +326,7 @@ class _MobileAuthState extends State<MobileAuth> {
                                   fontFamily: "Poppins",
                                   fontWeight: FontWeight.w600,
                                   fontSize: 16,
-                                  color: Colors.white
+                                  color: Color(0xfffe5a60)
                               ),
                             )
                         ),

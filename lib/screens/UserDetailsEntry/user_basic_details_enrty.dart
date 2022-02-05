@@ -3,6 +3,7 @@ import 'package:intl/intl.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:little_sparrow/models/user_details.dart';
 import 'package:little_sparrow/screens/InitialQuiz/initial_questioning.dart';
 import 'package:little_sparrow/screens/UserDetailsEntry/user_remaining_data_entry.dart';
 import 'package:little_sparrow/screens/intro_page_1.dart';
@@ -372,6 +373,16 @@ class _BasicDataEntryState extends State<BasicDataEntry> {
                               _showMyDialog();
                             }
                             else{
+                              // To store basic entry data in user's model
+                              UserDetail.basicEntry(
+                                _userNameController.text,
+                                _userBirthDate,
+                                _userCurrentlyPregnant,
+                                _userDeliveryDate,
+                                int.parse(_userChildNoController.text)
+                              );
+
+
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(

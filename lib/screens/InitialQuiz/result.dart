@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:little_sparrow/models/user_details.dart';
 import 'package:little_sparrow/screens/UserDetailsEntry/user_remaining_data_entry.dart';
 import 'package:little_sparrow/screens/home.dart';
 
@@ -33,6 +34,8 @@ class Result extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             const SizedBox(height: 10,),
+
+            // Stage of depression printed
             Text(
               resultPhrase,
               style: const TextStyle(
@@ -43,21 +46,33 @@ class Result extends StatelessWidget {
               ),
               textAlign: TextAlign.center,
             ),
+
             const SizedBox(height: 10,),
+
             const Text(
               'Pospartum Depression',
               style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
               textAlign: TextAlign.center,
             ),
+
             const Text(
               'detected',
               style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
               textAlign: TextAlign.center,
-            ),//Text
+            ),//
+
             const SizedBox(height: 50,),
-            // Home Button
+
+            // Button direct to homepage
             InkWell(
               onTap: (){
+
+                // to declare that user has taken the test
+                UserDetail.initialTestTaken(
+                  true,
+                  resultScore
+                );
+
                 Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => const RemainingDataEntry())
