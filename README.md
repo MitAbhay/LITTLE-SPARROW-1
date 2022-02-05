@@ -37,16 +37,16 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
-    <li>
+<!--     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
-    </li>
+    </li> -->
     <li><a href="#vision">Our Vision</a></li>
     <!-- <li><a href="#roadmap">Roadmap</a></li> -->
-    <li><a href="#contributing">Contributing</a></li>
+<!--     <li><a href="#contributing">Contributing</a></li> -->
     <!-- <li><a href="#license">License</a></li> -->
     <li><a href="#team">Our Team</a></li>
     <!-- <li><a href="#acknowledgments">Acknowledgments</a></li> -->
@@ -63,6 +63,7 @@
 <img src="assets/Screenshots/ss5.jpeg" alt="ss" width="320" height="480">
 </div>
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
+
 
 The hand that cradles is the hand that rules the world
 
