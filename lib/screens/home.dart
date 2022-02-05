@@ -3,6 +3,8 @@ import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:little_sparrow/screens/AboutPPD/about_ppd.dart';
 import 'package:little_sparrow/screens/AboutUs/about_us.dart';
+import 'package:little_sparrow/screens/Notifications/notifications.dart';
+import 'package:little_sparrow/screens/Settings/settings.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -51,7 +53,14 @@ class HomePage extends StatelessWidget {
                           children: <Widget>[
                             //Notification
                             InkWell(
-                              onTap: (){},
+                              onTap: (){
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => const Notifications()
+                                  )
+                                );
+                              },
                               child: Image.asset(
                                 "assets/images/bell.png",
                                 height: 30,
@@ -60,7 +69,14 @@ class HomePage extends StatelessWidget {
                             ),
                             //Setting
                             InkWell(
-                              onTap: (){},
+                              onTap: (){
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => const Settings()
+                                    )
+                                );
+                              },
                               child: Image.asset(
                                 "assets/images/gear.png",
                                 height: 30,
@@ -84,10 +100,10 @@ class HomePage extends StatelessWidget {
                             InkWell(
                                 onTap: (){
                                   Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                        builder: (context) => const AboutPPD()
-                                      )
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => const AboutPPD()
+                                    )
                                   );
                                 },
                                 borderRadius: BorderRadius.circular(20),
@@ -104,11 +120,12 @@ class HomePage extends StatelessWidget {
                                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                                       crossAxisAlignment: CrossAxisAlignment.center,
                                       children: <Widget>[
+                                        const SizedBox(),
                                         Image.asset(
                                           "assets/images/PPD.png",
-                                          height: 120,
+                                          height: 80,
                                         ),
-
+                                        const SizedBox(),
                                         const Text(
                                           "About PPD",
                                           style: TextStyle(
@@ -116,9 +133,6 @@ class HomePage extends StatelessWidget {
                                               fontSize: 18,
                                               color: Colors.black
                                           ),
-                                        ),
-                                        const SizedBox(
-                                          height: 4,
                                         )
                                       ],
                                     ),

@@ -1,6 +1,8 @@
 import 'package:flutter/services.dart';
 import 'package:flutter/material.dart';
 import 'package:bulleted_list/bulleted_list.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:little_sparrow/screens/home.dart';
 
 class AboutPPD extends StatelessWidget {
   const AboutPPD({Key? key}) : super(key: key);
@@ -210,6 +212,22 @@ class AboutPPD extends StatelessWidget {
             ),
           ),
         ),
+        floatingActionButton: FloatingActionButton(
+          child: const FaIcon(
+            FontAwesomeIcons.home,
+            color: Colors.white,
+          ),
+          backgroundColor: Colors.black,
+          onPressed: () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => const HomePage()
+                )
+            );
+          },
+        ),
+        floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
       ),
     );
   }

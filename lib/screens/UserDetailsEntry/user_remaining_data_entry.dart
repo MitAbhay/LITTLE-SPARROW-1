@@ -330,6 +330,13 @@ class _RemainingDataEntryState extends State<RemainingDataEntry> {
                           _showMyDialog();
                         } else {
 
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const HomePage()
+                              )
+                          );
+
                           UserDetail.remainingEntry(
                               _userCountryController.text,
                               _userStateController.text,
@@ -339,12 +346,7 @@ class _RemainingDataEntryState extends State<RemainingDataEntry> {
                               true
                           );
 
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const HomePage()
-                              )
-                          );
+
                         }
                       },
                       child: const Text(
