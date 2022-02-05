@@ -18,6 +18,10 @@
   <p align="center">
     An Application for solving the problem of Postmartum Depression.
     <br />
+    This is a Submission Project for Hackathon : 
+    <a href="https://www.hackviolet.com/">HackVoilet 2022</a>
+    <br />
+    <br />
     <a href="https://docs.google.com/presentation/d/1MTftF84CK2QUuVeUE3USoIupDVgb1AhyNT_g4CZv5c8/edit#slide=id.p"><strong>Explore the Presentation »</strong></a>
     <br />
     <br />
@@ -57,10 +61,10 @@
 
 ## About The Project
 <div align="center">
-<img src="assets/Screenshots/ss2.jpeg" alt="ss" width="320" height="480">
-<img src="assets/Screenshots/ss3.jpeg" alt="ss" width="320" height="480">
-<img src="assets/Screenshots/ss4.jpeg" alt="ss" width="320" height="480">
-<img src="assets/Screenshots/ss5.jpeg" alt="ss" width="320" height="480">
+<img src="assets/Screenshots/ss1.jpg" alt="ss" width="250" height="520">
+<img src="assets/Screenshots/ss2.jpg" alt="ss" width="250" height="520">
+<img src="assets/Screenshots/ss3.jpg" alt="ss" width="250" height="520">
+<img src="assets/Screenshots/ss4.jpg" alt="ss" width="250" height="520">
 </div>
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
@@ -103,6 +107,7 @@ We have used the following tech for this Application :
 - [Firebase](https://firebase.google.com/) 
 - [Android Studio](https://developer.android.com/)
 - [Dart](https://dart.dev/)
+- [Photoshop](https://www.adobe.com/in/products/photoshop.html)
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
