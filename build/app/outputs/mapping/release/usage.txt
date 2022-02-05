@@ -23351,9 +23351,9 @@ io.flutter.plugin.common.PluginRegistry
 com.google.common.collect.Synchronized$SynchronizedMultiset
 com.google.gson.internal.bind.TimeTypeAdapter$1
 io.flutter.plugins.firebase.database.R$drawable
-com.google.firebase.database.android.-$$Lambda$AndroidAppCheckTokenProvider$60vFfzkhuN4dN7asQDMFpqCxmE0:
-    public final void onAppCheckTokenChanged(com.google.firebase.appcheck.AppCheckTokenResult)
 com.google.firebase.firestore.auth.-$$Lambda$FirebaseAppCheckTokenProvider$hu48mr03bfT6X2LDSOXJket2KbA:
+    public final void onAppCheckTokenChanged(com.google.firebase.appcheck.AppCheckTokenResult)
+com.google.firebase.database.android.-$$Lambda$AndroidAppCheckTokenProvider$60vFfzkhuN4dN7asQDMFpqCxmE0:
     public final void onAppCheckTokenChanged(com.google.firebase.appcheck.AppCheckTokenResult)
 kotlinx.coroutines.scheduling.ExperimentalCoroutineDispatcher:
     public void close()
@@ -24563,5 +24563,5 @@ io.grpc.ClientInterceptors:
 com.google.android.gms.measurement.internal.zzec:
     private java.lang.String zze
 com.google.firebase.database.android.-$$Lambda$AndroidAppCheckTokenProvider$d5ouCwY_MlmKFbkPIcW9iYuM3gk
-io.flutter.plugin.platform.PlatformView$-CC
 io.flutter.plugin.common.BinaryMessenger$-CC
+io.flutter.plugin.platform.PlatformView$-CC

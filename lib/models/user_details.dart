@@ -1,7 +1,8 @@
-// import 'package:flutter/material.dart';
+import 'dart:async';
+import 'package:intl/intl.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
 
 class UserDetail {
   String? name; //done
@@ -33,13 +34,13 @@ class UserDetail {
       this.userDeliveryDate,
       this.userChildNo
   ){
-    print(name);
-    print(userDateOfBirth);
+    print('name : $name');
+    print('dob: $userDateOfBirth');
     print(userCurrentlyPregnant);
     print(userDeliveryDate);
     print(userChildNo);
     userAge = calculateAge(userDateOfBirth!);
-    print(userAge);
+    print("age: $userAge");
   }
 
   calculateAge(DateTime birthDate) {
@@ -90,8 +91,8 @@ class UserDetail {
         'state': userState,
         'pincode': userPinCode,
         'job': userJob,
-        'dob': userDateOfBirth,
-        'delivery date': userDeliveryDate,
+        'dob': DateFormat('dd-mm-yyyy').format(userDateOfBirth!),
+        'delivery date': DateFormat('dd-mm-yyyy').format(userDeliveryDate!),
         'single mother': userSingleMother,
         'currently pregnant': userCurrentlyPregnant,
         'details filled': userDetailsFilled,

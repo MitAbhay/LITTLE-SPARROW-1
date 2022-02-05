@@ -35,7 +35,7 @@ class _BasicDataEntryState extends State<BasicDataEntry> {
         context: context,
         initialDate: DateTime.now(),
         firstDate: DateTime(1950),
-        lastDate: DateTime(2022)
+        lastDate: DateTime(2030)
     );
     if (picked != null && picked != _userBirthDate) {
       setState(() {
@@ -51,7 +51,7 @@ class _BasicDataEntryState extends State<BasicDataEntry> {
         context: context,
         initialDate: DateTime.now(),
         firstDate: DateTime(2000),
-        lastDate: DateTime(2022)
+        lastDate: DateTime(2030)
     );
     if (picked != null && picked != _userDeliveryDate) {
       setState(() {
