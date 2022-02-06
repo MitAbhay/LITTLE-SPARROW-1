@@ -4,6 +4,8 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:little_sparrow/screens/AIBot/aibot.dart';
 import 'package:little_sparrow/screens/AboutPPD/about_ppd.dart';
 import 'package:little_sparrow/screens/AboutUs/about_us.dart';
+import 'package:little_sparrow/screens/Community/community.dart';
+import 'package:little_sparrow/screens/ConfidenceBooster/confidence_booster.dart';
 import 'package:little_sparrow/screens/Diary/diary.dart';
 import 'package:little_sparrow/screens/Notifications/notifications.dart';
 import 'package:little_sparrow/screens/Settings/settings.dart';
@@ -143,7 +145,12 @@ class HomePage extends StatelessWidget {
                             ),
                             //Community
                             InkWell(
-                                onTap: (){},
+                                onTap: (){
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => const Community())
+                                  );
+                                },
                                 borderRadius: BorderRadius.circular(20),
                                 child: Container(
                                   decoration: BoxDecoration(
@@ -333,7 +340,12 @@ class HomePage extends StatelessWidget {
                             ),
                             // Confidence Booster
                             InkWell(
-                                onTap: (){},
+                                onTap: (){
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => const ConfidenceBooster())
+                                  );
+                                },
                                 borderRadius: BorderRadius.circular(20),
                                 child: Container(
                                   decoration: BoxDecoration(
