@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:little_sparrow/screens/home.dart';
 
 class Settings extends StatefulWidget {
   const Settings({Key? key}) : super(key: key);
@@ -12,6 +12,16 @@ class Settings extends StatefulWidget {
 class _SettingsState extends State<Settings> {
   @override
   Widget build(BuildContext context) {
+
+    SystemChrome.setSystemUIOverlayStyle(
+        const SystemUiOverlayStyle(
+          statusBarColor: Colors.black,
+          //color set to transperent or set your own color
+          statusBarIconBrightness: Brightness.dark,
+          //set brightness for icons, like dark background light icons
+        )
+    );
+
     return Scaffold(
       appBar: AppBar(
         title: const Text(
@@ -30,12 +40,7 @@ class _SettingsState extends State<Settings> {
         ),
         backgroundColor: Colors.black,
         onPressed: () {
-          Navigator.push(
-              context,
-              MaterialPageRoute(
-                  builder: (context) => const HomePage()
-              )
-          );
+          Navigator.pop(context);
         },
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,

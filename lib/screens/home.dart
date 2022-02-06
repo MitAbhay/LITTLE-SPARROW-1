@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:little_sparrow/screens/AIBot/aibot.dart';
 import 'package:little_sparrow/screens/AboutPPD/about_ppd.dart';
 import 'package:little_sparrow/screens/AboutUs/about_us.dart';
 import 'package:little_sparrow/screens/Notifications/notifications.dart';
@@ -249,7 +250,12 @@ class HomePage extends StatelessWidget {
                             ),
                             // AI Bot
                             InkWell(
-                                onTap: (){},
+                                onTap: (){
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(builder: (context) => const AIBot())
+                                  );
+                                },
                                 borderRadius: BorderRadius.circular(20),
                                 child: Container(
                                   decoration: BoxDecoration(

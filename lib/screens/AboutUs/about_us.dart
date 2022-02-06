@@ -408,12 +408,7 @@ class AboutUs extends StatelessWidget {
           ),
           backgroundColor: Colors.black,
           onPressed: () {
-            Navigator.push(
-                context,
-                MaterialPageRoute(
-                    builder: (context) => const HomePage()
-                )
-            );
+            Navigator.pop(context);
           },
         ),
         floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,

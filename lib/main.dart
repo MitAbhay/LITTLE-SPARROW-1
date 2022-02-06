@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:little_sparrow/screens/AboutPPD/about_ppd.dart';
 import 'package:little_sparrow/screens/LogIn/login.dart';
+import 'package:little_sparrow/screens/home.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -31,7 +32,7 @@ class MyApp extends StatelessWidget {
 
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: AboutPPD(),
+      home: HomePage(),
     );
   }
 }

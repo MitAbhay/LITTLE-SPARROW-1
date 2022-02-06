@@ -76,33 +76,27 @@ class UserDetail {
     addUser();
   }
 
-  FirebaseFirestore firestore = FirebaseFirestore.instance;
 
-  CollectionReference userDetails = FirebaseFirestore.instance.collection('userDetails');
-
-  Future<void> addUser(){
-    return userDetails
-        .doc(userMobile)
-        .set(
-      {
-        'name': name,
-        'country': userCountry,
-        'mobile': userMobile,
-        'state': userState,
-        'pincode': userPinCode,
-        'job': userJob,
-        'dob': DateFormat('dd-mm-yyyy').format(userDateOfBirth!),
-        'delivery date': DateFormat('dd-mm-yyyy').format(userDeliveryDate!),
-        'single mother': userSingleMother,
-        'currently pregnant': userCurrentlyPregnant,
-        'details filled': userDetailsFilled,
-        'initial test taken': userInitialTestTaken ,
-        'child no': userChildNo,
-        'age': userAge,
-        'initial test score': userInitialScore,
-      }
-    ).then((value) => print("User Added"))
-      .catchError((error) => print("Failed to add user: $error"));
+  Future<DocumentReference> addUser(){
+    return FirebaseFirestore.instance
+        .collection('userDetails')
+        .add(<String, dynamic>{
+            'name': name,
+            'country': userCountry,
+            'mobile': userMobile,
+            'state': userState,
+            'pincode': userPinCode,
+            'job': userJob,
+            'dob': DateFormat('dd-mm-yyyy').format(userDateOfBirth!),
+            'delivery date': DateFormat('dd-mm-yyyy').format(userDeliveryDate!),
+            'single mother': userSingleMother,
+            'currently pregnant': userCurrentlyPregnant,
+            'details filled': userDetailsFilled,
+            'initial test taken': userInitialTestTaken ,
+            'child no': userChildNo,
+            'age': userAge,
+            'initial test score': userInitialScore,
+    });
   }
 
 }

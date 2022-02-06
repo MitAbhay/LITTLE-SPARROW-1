@@ -346,7 +346,6 @@ class _RemainingDataEntryState extends State<RemainingDataEntry> {
                               true
                           );
 
-
                         }
                       },
                       child: const Text(
