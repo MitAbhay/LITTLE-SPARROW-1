@@ -4,6 +4,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:little_sparrow/screens/AIBot/aibot.dart';
 import 'package:little_sparrow/screens/AboutPPD/about_ppd.dart';
 import 'package:little_sparrow/screens/AboutUs/about_us.dart';
+import 'package:little_sparrow/screens/Appointment/appointment.dart';
 import 'package:little_sparrow/screens/Community/community.dart';
 import 'package:little_sparrow/screens/ConfidenceBooster/confidence_booster.dart';
 import 'package:little_sparrow/screens/Diary/diary.dart';
@@ -186,7 +187,14 @@ class HomePage extends StatelessWidget {
                             ),
                             //Appointment
                             InkWell(
-                                onTap: (){},
+                                onTap: (){
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) => const Appointment()
+                                      )
+                                  );
+                                },
                                 borderRadius: BorderRadius.circular(20),
                                 child: Container(
                                   decoration: BoxDecoration(
