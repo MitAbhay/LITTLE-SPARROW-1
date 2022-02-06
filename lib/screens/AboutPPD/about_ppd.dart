@@ -56,6 +56,7 @@ class AboutPPD extends StatelessWidget {
                 const Center(
                   child: Text(
                     '"The hand that cradles is the hand that rules the world."',
+                    textAlign: TextAlign.center,
                     style: TextStyle(
                         fontStyle: FontStyle.italic,
                         fontFamily: "Poppins",

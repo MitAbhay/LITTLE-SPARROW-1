@@ -22,6 +22,7 @@ class UserDetail {
   int? userAge;
   int? userInitialScore; //done
   List<String>? userPreferredContacts;
+  List<List<Object>>? userDiary;
 
   UserDetail.mobileNumber(this.userMobile){
     print(userMobile);
