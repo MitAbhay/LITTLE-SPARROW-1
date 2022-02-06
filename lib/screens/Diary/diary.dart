@@ -140,7 +140,7 @@ class _DiaryState extends State<Diary> {
                     onTap: (){
                       Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => const OldDiaryEntry())
+                          MaterialPageRoute(builder: (context) => OldDiaryEntry())
                       );
                     },
                     child: Container(
