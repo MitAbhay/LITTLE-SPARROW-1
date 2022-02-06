@@ -65,6 +65,20 @@ class _AppointmentState extends State<Appointment> {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+
+    SystemChrome.setSystemUIOverlayStyle(
+        const SystemUiOverlayStyle(
+          statusBarColor: Colors.transparent,
+          //color set to transperent or set your own color
+          statusBarIconBrightness: Brightness.dark,
+          //set brightness for icons, like dark background light icons
+        )
+    );
+
+    return Scaffold(
+      body: SafeArea(
+        child: Column(),
+      ),
+    );
   }
 }
