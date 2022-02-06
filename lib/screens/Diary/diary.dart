@@ -121,12 +121,12 @@ class _DiaryState extends State<Diary> {
                               color: Colors.black,
                               width: 5
                           ),
-                          color: Colors.black.withOpacity(0.3)
+                          color: Colors.black.withOpacity(0.8)
                       ),
                       child: const Text(
                         "New Entry",
                         textAlign: TextAlign.center,
-                        style: const TextStyle(
+                        style: TextStyle(
                             fontSize: 30,
                             fontFamily: "Dongle",
                             color: Colors.white
@@ -153,7 +153,7 @@ class _DiaryState extends State<Diary> {
                               color: Colors.black,
                               width: 5
                           ),
-                          color: Colors.black.withOpacity(0.3)
+                          color: Colors.black.withOpacity(0.8)
                       ),
                       child: const Text(
                         "Old Entry",

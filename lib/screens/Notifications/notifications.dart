@@ -33,17 +33,6 @@ class _NotificationsState extends State<Notifications> {
         backgroundColor: Colors.black,
       ),
       // body: SafeArea(),
-      floatingActionButton: FloatingActionButton(
-        child: const FaIcon(
-          FontAwesomeIcons.home,
-          color: Colors.white,
-        ),
-        backgroundColor: Colors.black,
-        onPressed: () {
-          Navigator.pop(context);
-        },
-      ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
     );
   }
 }

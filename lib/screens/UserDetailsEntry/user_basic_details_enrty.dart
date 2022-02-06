@@ -376,9 +376,9 @@ class _BasicDataEntryState extends State<BasicDataEntry> {
                               // To store basic entry data in user's model
                               UserDetail.basicEntry(
                                 _userNameController.text,
-                                _userBirthDate,
+                                _userBirthDate!,
                                 _userCurrentlyPregnant,
-                                _userDeliveryDate,
+                                _userDeliveryDate!,
                                 int.parse(_userChildNoController.text)
                               );
 

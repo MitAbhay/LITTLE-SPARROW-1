@@ -15,8 +15,8 @@
 14-->D:\Flutter\Project\little_sparrow\android\app\src\debug\AndroidManifest.xml:6:5-66
 14-->D:\Flutter\Project\little_sparrow\android\app\src\debug\AndroidManifest.xml:6:22-64
 15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-15-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\mysel\.gradle\caches\transforms-2\files-2.1\20c92a9eacc34f0af3135437a9ce4824\jetified-firebase-auth-21.0.1\AndroidManifest.xml:24:5-79
-15-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\mysel\.gradle\caches\transforms-2\files-2.1\20c92a9eacc34f0af3135437a9ce4824\jetified-firebase-auth-21.0.1\AndroidManifest.xml:24:22-76
+15-->D:\Flutter\Project\little_sparrow\android\app\src\main\AndroidManifest.xml:3:5-79
+15-->D:\Flutter\Project\little_sparrow\android\app\src\main\AndroidManifest.xml:3:22-76
 16    <uses-permission android:name="android.permission.WAKE_LOCK" />
 16-->[com.google.android.gms:play-services-measurement-api:20.0.2] C:\Users\mysel\.gradle\caches\transforms-2\files-2.1\e3e51d82b2815d88db9c1c8c576d1159\jetified-play-services-measurement-api-20.0.2\AndroidManifest.xml:24:5-68
 16-->[com.google.android.gms:play-services-measurement-api:20.0.2] C:\Users\mysel\.gradle\caches\transforms-2\files-2.1\e3e51d82b2815d88db9c1c8c576d1159\jetified-play-services-measurement-api-20.0.2\AndroidManifest.xml:24:22-65

@@ -1,28 +1,32 @@
 import 'dart:async';
+import 'package:flutter/foundation.dart';
 import 'package:intl/intl.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 
 class UserDetail {
-  String? name; //done
-  String? username;
-  String? userMobile; //done
-  String? userCountry; //done
-  String? userState; //done
-  String? userPinCode; //done
-  String? userJob; //done
-  DateTime? userDateOfBirth; //done
-  DateTime? userDeliveryDate; //done
-  bool? userSingleMother; //done
-  bool? userCurrentlyPregnant; //done
-  bool? userDetailsFilled; //done
+  String name = ""; //done
+  String username = "";
+  String userMobile = ""; //done
+  String userCountry = ""; //done
+  String userState = ""; //done
+  String userPinCode = ""; //done
+  String userJob = ""; //done
+  String userCurrentDiaryEntry = "";
+  DateTime userDateOfBirth = DateTime.now(); //done
+  DateTime userDeliveryDate = DateTime.now(); //done
+  DateTime userCurrentDiaryEntryTiming = DateTime.now();
+  bool userSingleMother = false; //done
+  bool userCurrentlyPregnant = false; //done
+  bool userDetailsFilled = false; //done
   bool userInitialTestTaken = false; //done
-  int? userChildNo; //done
-  int? userAge;
-  int? userInitialScore; //done
-  List<String>? userPreferredContacts;
-  List<List<Object>>? userDiary;
+  int userChildNo = 0; //done
+  int userAge = 0;
+  int userInitialScore = 0; //done
+  List<String> userPreferredContacts = [];
+  List<String> userDiary = [];
+  List<DateTime> userDiaryTiming = [];
 
   UserDetail.mobileNumber(this.userMobile){
     print(userMobile);
@@ -40,7 +44,7 @@ class UserDetail {
     print(userCurrentlyPregnant);
     print(userDeliveryDate);
     print(userChildNo);
-    userAge = calculateAge(userDateOfBirth!);
+    userAge = calculateAge(userDateOfBirth);
     print("age: $userAge");
   }
 
@@ -77,6 +81,17 @@ class UserDetail {
     addUser();
   }
 
+  UserDetail.addDiaryEntry(this.userCurrentDiaryEntry){
+    userCurrentDiaryEntryTiming = DateTime.now();
+    userDiary.add(userCurrentDiaryEntry);
+    userDiaryTiming.add(userCurrentDiaryEntryTiming);
+      for(int i=0; i<userDiary.length; i++){
+        print(userDiary[i]);
+        print(userDiaryTiming[i]);
+      }
+
+  }
+
 
   Future<DocumentReference> addUser(){
     return FirebaseFirestore.instance
@@ -88,8 +103,8 @@ class UserDetail {
             'state': userState,
             'pincode': userPinCode,
             'job': userJob,
-            'dob': DateFormat('dd-mm-yyyy').format(userDateOfBirth!),
-            'delivery date': DateFormat('dd-mm-yyyy').format(userDeliveryDate!),
+            'dob': DateFormat('dd-mm-yyyy').format(userDateOfBirth),
+            'delivery date': DateFormat('dd-mm-yyyy').format(userDeliveryDate),
             'single mother': userSingleMother,
             'currently pregnant': userCurrentlyPregnant,
             'details filled': userDetailsFilled,
